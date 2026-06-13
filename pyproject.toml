@@ -1,0 +1,36 @@
+[project]
+name = "azure-financial-crime-risk-intelligence-platform"
+version = "0.1.0"
+description = "Local-first scaffold for an Azure-aligned financial crime and risk intelligence platform using synthetic data."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Portfolio Project" }
+]
+keywords = [
+  "azure",
+  "fintech",
+  "financial-crime",
+  "fraud-detection",
+  "aml",
+  "risk-scoring",
+  "mlops"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

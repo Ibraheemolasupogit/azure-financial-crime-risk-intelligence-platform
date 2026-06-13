@@ -1,0 +1,30 @@
+project:
+  name: azure-financial-crime-risk-intelligence-platform
+  milestone: "Milestone 1 - Repo scaffold"
+  environment: local
+  cloud_connections_enabled: false
+
+data_policy:
+  synthetic_data_only: true
+  allow_real_customer_data: false
+  allow_real_banking_data: false
+  allow_personal_data: false
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  sample_data: data/samples
+  reports: outputs/reports
+
+azure_service_mapping:
+  transaction_ingestion: Azure Event Hubs
+  batch_data_lake: Azure Data Lake Storage
+  stream_processing: Azure Stream Analytics / Azure Functions
+  data_warehouse: Azure Synapse Analytics
+  ml_training: Azure Machine Learning
+  model_serving: Azure ML Managed Endpoint
+  genai_investigation: Azure AI Foundry / Azure OpenAI
+  secrets: Azure Key Vault
+  monitoring: Azure Monitor / Application Insights
+  dashboard: Power BI
+  governance: Microsoft Purview
