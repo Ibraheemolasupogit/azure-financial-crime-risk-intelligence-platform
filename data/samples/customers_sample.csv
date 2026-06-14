@@ -1,0 +1,3 @@
+customer_id,first_name,last_name,date_of_birth,age_band,country,customer_segment,employment_status,annual_income_band,onboarding_date,kyc_status,pep_flag,sanctions_screening_status,customer_risk_rating
+CUST-000001,SyntheticFirst000001,SyntheticLast000001,1988-04-16,35-44,GB,Retail,Employed,50k-100k,2021-03-22,Verified,False,Clear,Low
+CUST-000002,SyntheticFirst000002,SyntheticLast000002,1976-09-08,45-54,DE,Premier,Self-employed,100k-250k,2020-11-03,Enhanced Due Diligence,True,Potential Match,High

@@ -66,7 +66,32 @@ The planned end-to-end use case is a synthetic financial institution monitoring 
 
 The MVP will be implemented incrementally and remain runnable locally. The first complete version will include synthetic data generation, validation checks, feature engineering, a baseline fraud model, AML rule scenarios, customer risk scoring, model explainability outputs, local reports, and Power BI-ready artifacts.
 
-Milestone 1 delivers only the production-style scaffold and documentation foundation.
+Milestone 1 delivers the production-style scaffold and documentation foundation. Milestone 2 adds deterministic synthetic banking data generation.
+
+## Synthetic Banking Data
+
+Milestone 2 adds a local synthetic banking data generator that creates six linked datasets:
+
+| Dataset | Description |
+| --- | --- |
+| `customers.csv` | Fictional customer profiles with onboarding, KYC, screening, segment, and risk attributes. |
+| `accounts.csv` | Fictional accounts linked to synthetic customers. |
+| `transactions.jsonl` | Synthetic transaction events with channel, merchant, amount, device, and session context. |
+| `device_sessions.jsonl` | Synthetic digital banking session records linked to customers and devices. |
+| `fraud_labels.csv` | Synthetic transaction-level labels for future fraud model development. |
+| `aml_watchlist.csv` | Synthetic customer-level AML alerts for monitoring and investigation workflows. |
+
+Synthetic data is used so the project can demonstrate banking and financial crime analytics patterns without exposing real customers, real accounts, real card data, real devices, personal data, or confidential financial institution records.
+
+Run the generator locally:
+
+```bash
+python3 scripts/generate_synthetic_data.py
+```
+
+Generated outputs are written to `data/raw/`. Small representative samples are stored in `data/samples/` for quick inspection and documentation.
+
+These datasets support later milestones by providing linked entities for fraud detection, AML rules, customer risk scoring, explainability, monitoring, reporting, and Power BI-ready outputs. The data model also gives future Azure-aligned architecture work concrete local artifacts to map conceptually to Event Hubs, Data Lake Storage, Synapse Analytics, Azure Machine Learning, Power BI, and Microsoft Purview.
 
 ## Planned ML Use Cases
 
@@ -144,6 +169,7 @@ This project currently requires no Azure credentials and no paid services.
 python3.11 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+python scripts/generate_synthetic_data.py
 pytest
 ruff check .
 ./scripts/run_all_local.sh

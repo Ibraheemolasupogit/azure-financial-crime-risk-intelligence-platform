@@ -1,0 +1,2 @@
+{"authentication_method":"Biometric","customer_id":"CUST-000001","device_id":"DEV-000001-01","device_type":"Mobile","ip_country":"GB","login_success":true,"operating_system":"iOS","session_id":"SES-00000001","session_risk_signal":"Low","session_timestamp":"2025-05-14T10:18:44"}
+{"authentication_method":"MFA Push","customer_id":"CUST-000002","device_id":"DEV-000002-01","device_type":"Desktop","ip_country":"DE","login_success":true,"operating_system":"Windows","session_id":"SES-00000002","session_risk_signal":"Elevated","session_timestamp":"2025-05-15T23:41:02"}

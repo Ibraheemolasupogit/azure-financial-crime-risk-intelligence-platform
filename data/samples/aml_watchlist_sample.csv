@@ -1,0 +1,2 @@
+watchlist_id,customer_id,watchlist_type,alert_reason,alert_severity,created_date,review_status
+AML-0000001,CUST-000002,PEP Review,Synthetic enhanced due diligence trigger,High,2025-06-30,In Review
