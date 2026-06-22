@@ -181,6 +181,22 @@ Outputs include customer scores, component-level evidence, a portfolio summary, 
 
 Risk bands and review priorities are analytical triage aids requiring human review. They do not prove criminal activity or independently justify adverse, legal, sanctions, reporting, or regulatory action. Conceptually, the workflow maps storage to Data Lake Storage, aggregation to Synapse, future learned models to Azure Machine Learning, orchestration to Functions, governance to Purview, telemetry to Azure Monitor, reporting to Power BI, and deployed secrets to Key Vault.
 
+## Fraud Model Explainability
+
+Milestone 8 explains the persisted Logistic Regression baseline using its native linear structure, without retraining the model or adding SHAP. Global outputs rank transformed coefficient associations and aggregate one-hot levels to source features. Local outputs calculate each transaction's transformed value multiplied by its coefficient.
+
+Every local explanation reconstructs the model decision score from the intercept and contributions, then reconstructs probability with the logistic function. Deterministic positive and negative reason codes retain source features, observed values, signed contributions, threshold context, and non-causal caveats.
+
+Run locally:
+
+```bash
+python3 scripts/explain_fraud_model.py
+```
+
+Outputs include global importance, source-level aggregation, local explanations, detailed contributions, reason codes, reconstruction quality, error-type analysis, a portfolio report, and a limited set of investigator packets. Identifiers, labels, timestamps, and post-outcome fields are prohibited as explanatory model features.
+
+Explanations describe model behaviour and association, not causation, fraud, or criminal conduct. Human review remains mandatory, particularly for the baseline's substantial false-positive population. Conceptually, the layer maps to Azure Machine Learning responsible AI and registry capabilities, Data Lake Storage, Synapse, Azure Monitor, Purview, Power BI, and later Azure AI Foundry assistance.
+
 ## Planned ML Use Cases
 
 - Transaction fraud classification
@@ -263,6 +279,7 @@ python3 scripts/build_features.py
 python3 scripts/train_fraud_baseline.py
 python3 scripts/run_aml_rules.py
 python3 scripts/score_customer_risk.py
+python3 scripts/explain_fraud_model.py
 python3 -m pytest
 python3 -m ruff check .
 ./scripts/run_all_local.sh

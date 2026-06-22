@@ -40,6 +40,9 @@ jobs:
       - name: Score customer risk
         run: python scripts/score_customer_risk.py
 
+      - name: Generate fraud model explanations
+        run: python scripts/explain_fraud_model.py
+
       - name: Run ruff
         run: ruff check .
 

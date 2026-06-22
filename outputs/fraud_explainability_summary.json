@@ -1,0 +1,168 @@
+{
+  "run_timestamp": "2026-06-22T20:25:09+00:00",
+  "model_identifier": "1.0.0-baseline",
+  "model_type": "LogisticRegression",
+  "transactions_available": 367,
+  "transactions_explained": 367,
+  "transformed_features": 88,
+  "source_features": 34,
+  "highest_global_positive_associations": [
+    {
+      "transformed_feature_name": "categorical__ip_country_IE",
+      "coefficient": 1.727285927451466
+    },
+    {
+      "transformed_feature_name": "categorical__ip_country_ES",
+      "coefficient": 1.4008228814242476
+    },
+    {
+      "transformed_feature_name": "numeric__amount_vs_customer_average",
+      "coefficient": 1.0965020706724746
+    },
+    {
+      "transformed_feature_name": "categorical__customer_country_DE",
+      "coefficient": 1.0318000449692897
+    },
+    {
+      "transformed_feature_name": "numeric__transaction_count_customer_24h",
+      "coefficient": 1.0217683048975263
+    },
+    {
+      "transformed_feature_name": "categorical__merchant_country_GB",
+      "coefficient": 0.7894854208371119
+    },
+    {
+      "transformed_feature_name": "categorical__merchant_country_BR",
+      "coefficient": 0.7802645067226328
+    },
+    {
+      "transformed_feature_name": "numeric__is_cross_border",
+      "coefficient": 0.7515353784408282
+    },
+    {
+      "transformed_feature_name": "categorical__merchant_country_CA",
+      "coefficient": 0.7190431711285736
+    },
+    {
+      "transformed_feature_name": "numeric__distinct_countries_customer_7d",
+      "coefficient": 0.6340690519244285
+    }
+  ],
+  "highest_global_negative_associations": [
+    {
+      "transformed_feature_name": "numeric__amount_vs_account_average",
+      "coefficient": -2.2957654618065293
+    },
+    {
+      "transformed_feature_name": "categorical__ip_country_FR",
+      "coefficient": -1.648695566354127
+    },
+    {
+      "transformed_feature_name": "categorical__merchant_country_SG",
+      "coefficient": -1.483780591348345
+    },
+    {
+      "transformed_feature_name": "numeric__transaction_velocity_score",
+      "coefficient": -1.2795999175127972
+    },
+    {
+      "transformed_feature_name": "categorical__ip_country_ZA",
+      "coefficient": -1.1178853090989653
+    },
+    {
+      "transformed_feature_name": "numeric__transaction_amount_customer_24h",
+      "coefficient": -1.0491558044270766
+    },
+    {
+      "transformed_feature_name": "categorical__merchant_country_DE",
+      "coefficient": -0.8868986291676353
+    },
+    {
+      "transformed_feature_name": "categorical__customer_country_ES",
+      "coefficient": -0.8004561248080124
+    },
+    {
+      "transformed_feature_name": "categorical__currency_CAD",
+      "coefficient": -0.8000773398829057
+    },
+    {
+      "transformed_feature_name": "categorical__customer_country_CA",
+      "coefficient": -0.8000773398829057
+    }
+  ],
+  "common_local_reason_codes": {
+    "FRC_CURRENCY_DOWN": 179,
+    "FRC_AMOUNT_VS_ACCOUNT_AVERAGE_UP": 158,
+    "FRC_IP_COUNTRY_UP": 144,
+    "FRC_DISTINCT_COUNTRIES_CUSTOMER_7D_DOWN": 137,
+    "FRC_IP_COUNTRY_DOWN": 123,
+    "FRC_CUSTOMER_COUNTRY_DOWN": 120,
+    "FRC_MERCHANT_COUNTRY_UP": 108,
+    "FRC_HIGH_RISK_CHANNEL_FLAG_UP": 106,
+    "FRC_DISTINCT_MERCHANTS_CUSTOMER_7D_UP": 88,
+    "FRC_MERCHANT_CATEGORY_DOWN": 87
+  },
+  "explanation_quality_metrics": {
+    "run_timestamp": "2026-06-22T20:25:09+00:00",
+    "transactions_explained": 367,
+    "explanations_passed": 367,
+    "explanations_failed": 0,
+    "maximum_decision_score_difference": 5.329070518200751e-15,
+    "maximum_probability_difference": 3.3306690738754696e-16,
+    "invalid_reason_code_count": 0,
+    "excluded_feature_violations": [],
+    "missing_feature_count": 0,
+    "overall_status": "passed",
+    "synthetic_data_statement": "All explained transactions and labels are synthetic."
+  },
+  "error_type_analysis": [
+    {
+      "error_type": "true_positive",
+      "transaction_count": 10,
+      "average_fraud_probability": 0.303457191227256,
+      "average_absolute_contribution": 0.16111711222946887,
+      "most_common_positive_reason": "FRC_IP_COUNTRY_UP",
+      "most_common_negative_reason": "FRC_CURRENCY_DOWN",
+      "dominant_source_features": "[\"ip_country\", \"amount_vs_account_average\", \"customer_country\"]",
+      "interpretation": "Associations describe model behaviour, not causes or confirmed outcomes."
+    },
+    {
+      "error_type": "false_positive",
+      "transaction_count": 320,
+      "average_fraud_probability": 0.4140700555512387,
+      "average_absolute_contribution": 0.10410576534299706,
+      "most_common_positive_reason": "FRC_AMOUNT_VS_ACCOUNT_AVERAGE_UP",
+      "most_common_negative_reason": "FRC_CURRENCY_DOWN",
+      "dominant_source_features": "[\"ip_country\", \"distinct_countries_customer_7d\", \"amount_vs_account_average\"]",
+      "interpretation": "Associations describe model behaviour, not causes or confirmed outcomes."
+    },
+    {
+      "error_type": "true_negative",
+      "transaction_count": 37,
+      "average_fraud_probability": 0.017906778155241946,
+      "average_absolute_contribution": 0.18777189460373636,
+      "most_common_positive_reason": "FRC_IP_COUNTRY_UP",
+      "most_common_negative_reason": "FRC_CURRENCY_DOWN",
+      "dominant_source_features": "[\"ip_country\", \"merchant_country\", \"amount_vs_account_average\"]",
+      "interpretation": "Associations describe model behaviour, not causes or confirmed outcomes."
+    },
+    {
+      "error_type": "false_negative",
+      "transaction_count": 0,
+      "average_fraud_probability": NaN,
+      "average_absolute_contribution": NaN,
+      "most_common_positive_reason": "",
+      "most_common_negative_reason": "",
+      "dominant_source_features": "[]",
+      "interpretation": "No transactions in this outcome group."
+    }
+  ],
+  "overall_status": "passed",
+  "known_limitations": [
+    "Coefficients and contributions are model associations, not causal explanations.",
+    "Synthetic labels contain weak behavioural signal and produce many false positives.",
+    "One-hot levels are aggregated for readability but remain separate model terms.",
+    "Explanations describe the persisted baseline only and require human interpretation."
+  ],
+  "synthetic_data_statement": "All explanation inputs and outputs are synthetic."
+}

@@ -1,0 +1,13 @@
+{
+  "run_timestamp": "2026-06-22T20:25:09+00:00",
+  "transactions_explained": 367,
+  "explanations_passed": 367,
+  "explanations_failed": 0,
+  "maximum_decision_score_difference": 5.329070518200751e-15,
+  "maximum_probability_difference": 3.3306690738754696e-16,
+  "invalid_reason_code_count": 0,
+  "excluded_feature_violations": [],
+  "missing_feature_count": 0,
+  "overall_status": "passed",
+  "synthetic_data_statement": "All explained transactions and labels are synthetic."
+}

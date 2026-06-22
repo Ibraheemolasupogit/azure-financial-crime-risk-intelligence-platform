@@ -43,3 +43,9 @@ Alerts and customer priorities are triage artifacts only. They do not prove crim
 Milestone 7 combines five bounded and independently auditable components into a weighted 0–100 customer score. The component audit records raw indicators, thresholds, caps, reasons, configured weights, and contributions so every total can be reconstructed.
 
 Actual fraud labels are prohibited from scoring and used only in a separate retrospective synthetic evaluation. Risk bands and review priorities require contextual human review and must not independently trigger adverse or legal decisions.
+
+## Fraud Model Explainability
+
+Milestone 8 provides native global and transaction-level explanations for the persisted Logistic Regression fraud baseline. Transformed values multiplied by coefficients reconstruct each decision score and probability, while source-feature mappings and deterministic reason codes make model behaviour reviewable.
+
+Explanation quality controls prohibit identifiers and labels, validate numerical reconstruction, handle empty prediction-outcome groups, and retain detailed contribution lineage. Explanations remain non-causal synthetic model artifacts requiring human interpretation.

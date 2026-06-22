@@ -2,7 +2,7 @@
 set -euo pipefail
 
 echo "Azure Financial Crime Risk Intelligence Platform"
-echo "Current status: Milestone 7 - Customer risk scoring"
+echo "Current status: Milestone 8 - Fraud model explainability"
 echo "Azure credentials required: no"
 echo "Synthetic data only: yes"
 echo
@@ -16,6 +16,7 @@ required_paths=(
   "configs/fraud_model_config.yaml"
   "configs/aml_rules_config.yaml"
   "configs/customer_risk_config.yaml"
+  "configs/explainability_config.yaml"
   "src"
   "src/data_generation/generate_banking_data.py"
   "src/ingestion/load_banking_data.py"
@@ -24,12 +25,14 @@ required_paths=(
   "src/models/train_fraud_baseline.py"
   "src/aml_rules/aml_rule_engine.py"
   "src/risk_scoring/customer_risk_scoring.py"
+  "src/explainability/explain_fraud_model.py"
   "scripts/generate_synthetic_data.py"
   "scripts/run_data_validation.py"
   "scripts/build_features.py"
   "scripts/train_fraud_baseline.py"
   "scripts/run_aml_rules.py"
   "scripts/score_customer_risk.py"
+  "scripts/explain_fraud_model.py"
   "docs/project_overview.md"
   "tests/test_repo_structure.py"
   "tests/test_data_generation.py"
@@ -39,6 +42,7 @@ required_paths=(
   "tests/test_fraud_baseline.py"
   "tests/test_aml_rule_engine.py"
   "tests/test_customer_risk_scoring.py"
+  "tests/test_model_explainability.py"
 )
 
 for path in "${required_paths[@]}"; do
@@ -68,10 +72,13 @@ echo
 echo "Scoring customer financial-crime risk..."
 "${PYTHON_BIN}" scripts/score_customer_risk.py
 echo
+echo "Generating fraud model explanations..."
+"${PYTHON_BIN}" scripts/explain_fraud_model.py
+echo
 echo "Running tests..."
 "${PYTHON_BIN}" -m pytest
 echo
 echo "Running lint checks..."
 "${PYTHON_BIN}" -m ruff check .
 echo
-echo "Milestone 7 local checks passed."
+echo "Milestone 8 local checks passed."

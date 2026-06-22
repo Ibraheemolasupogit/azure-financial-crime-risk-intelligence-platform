@@ -1,0 +1,5 @@
+error_type,transaction_count,average_fraud_probability,average_absolute_contribution,most_common_positive_reason,most_common_negative_reason,dominant_source_features,interpretation
+true_positive,10,0.303457191227256,0.16111711222946887,FRC_IP_COUNTRY_UP,FRC_CURRENCY_DOWN,"[""ip_country"", ""amount_vs_account_average"", ""customer_country""]","Associations describe model behaviour, not causes or confirmed outcomes."
+false_positive,320,0.4140700555512387,0.10410576534299706,FRC_AMOUNT_VS_ACCOUNT_AVERAGE_UP,FRC_CURRENCY_DOWN,"[""ip_country"", ""distinct_countries_customer_7d"", ""amount_vs_account_average""]","Associations describe model behaviour, not causes or confirmed outcomes."
+true_negative,37,0.017906778155241946,0.18777189460373636,FRC_IP_COUNTRY_UP,FRC_CURRENCY_DOWN,"[""ip_country"", ""merchant_country"", ""amount_vs_account_average""]","Associations describe model behaviour, not causes or confirmed outcomes."
+false_negative,0,,,,,[],No transactions in this outcome group.
