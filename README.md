@@ -211,6 +211,12 @@ Earlier transactions form the baseline and later transactions form the current p
 
 Monitoring recommends human review only. It never retrains models or changes fraud thresholds, AML scenarios, score weights, or risk bands automatically. Conceptually, the layer maps to Azure Monitor, Application Insights, Azure ML monitoring, ADLS, Synapse, Purview, AI Foundry observability, Log Analytics, and Power BI.
 
+## Power BI-Ready Analytics
+
+Milestone 11 builds a governed star-schema-style reporting layer with seven dimensions, nine facts, six aggregates, 21 reconciled executive KPIs, a reporting dictionary, semantic-model specification, production-style DAX examples, and dashboard page requirements. Run it locally with `python3 scripts/build_powerbi_outputs.py`.
+
+Deterministic surrogate keys and single-direction relationships support Power BI import and drill-through. Quality gates reconcile transaction, AML, customer-risk, investigation, and monitoring counts while excluding names, dates of birth, addresses, and unnecessary personal details. No `.pbix` file or Power BI Service deployment is created. The design maps conceptually to ADLS, Synapse or Fabric, Power BI semantic models and dashboards, Purview, Azure Monitor, Azure ML, and Azure AI Foundry.
+
 Run locally with `python3 scripts/generate_investigation_reports.py`. Conceptually, the workflow maps to Azure AI Foundry, Azure OpenAI, AI Content Safety, Azure Functions, ADLS, Synapse, Key Vault, Purview, Azure Monitor, and Power BI, while remaining fully local in this milestone.
 
 ## Planned ML Use Cases

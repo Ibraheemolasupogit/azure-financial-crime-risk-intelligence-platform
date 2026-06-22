@@ -1,0 +1,15 @@
+pipeline_stage,stage_status,artefact_count,freshness_status,parseability_status,row_count_consistency_status,generated_date_key
+synthetic_data_generation,healthy,1,healthy,passed,not_applicable,20260622
+ingestion_validation,healthy,1,healthy,passed,not_applicable,20260622
+feature_engineering,healthy,1,healthy,passed,not_applicable,20260622
+fraud_baseline,healthy,1,healthy,passed,not_applicable,20260622
+aml_rules,healthy,1,healthy,passed,not_applicable,20260622
+customer_risk_scoring,healthy,1,healthy,passed,not_applicable,20260622
+model_explainability,healthy,1,healthy,passed,not_applicable,20260622
+genai_investigation,healthy,1,healthy,passed,not_applicable,20260622
+artefact_1,healthy,1,healthy,passed,not_applicable,20260622
+artefact_2,healthy,1,healthy,passed,not_applicable,20260622
+artefact_3,healthy,1,healthy,passed,not_applicable,20260622
+artefact_4,healthy,1,healthy,passed,not_applicable,20260622
+artefact_5,healthy,1,healthy,passed,not_applicable,20260622
+artefact_6,healthy,1,healthy,passed,not_applicable,20260622

@@ -49,6 +49,9 @@ jobs:
       - name: Run platform monitoring
         run: python scripts/run_platform_monitoring.py
 
+      - name: Build Power BI-ready outputs
+        run: python scripts/build_powerbi_outputs.py
+
       - name: Run ruff
         run: ruff check .
 

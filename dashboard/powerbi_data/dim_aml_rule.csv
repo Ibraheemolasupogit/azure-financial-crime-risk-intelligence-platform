@@ -1,0 +1,11 @@
+aml_rule_key,rule_id,rule_name,typology,default_severity,configured_risk_points,enabled_status
+721623311219476228,AML001,High-value transaction,High-value transaction,high,30,True
+1003914630646670938,AML002,Structuring or smurfing,Structuring or smurfing,high,35,True
+550203189520272734,AML003,Rapid movement of funds,Rapid movement of funds,high,30,True
+316861408653127041,AML004,High-risk geography,High-risk geography,medium,18,True
+1013115407186803838,AML005,Unusual cross-border activity,Unusual cross-border activity,medium,20,True
+715267801237430515,AML006,Dormant or low-activity account reactivation,Dormant or low-activity account reactivation,high,28,True
+1019656728711465498,AML007,Repeated failed transactions,Repeated failed transactions,medium,16,True
+69515675679568663,AML008,Device or session risk,Device or session risk,medium,18,True
+807211356388451501,AML009,"KYC, PEP, sanctions, or watchlist exposure","KYC, PEP, sanctions, or watchlist exposure",high,32,True
+289051792576040010,AML010,Unusual merchant or channel pattern,Unusual merchant or channel pattern,low,10,True

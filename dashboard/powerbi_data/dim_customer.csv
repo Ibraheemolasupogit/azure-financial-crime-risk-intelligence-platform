@@ -1,0 +1,51 @@
+customer_key,customer_id,customer_segment,country,onboarding_period,kyc_status_category,pep_indicator,sanctions_screening_indicator,aml_watchlist_indicator,synthetic_data_flag
+1101053381991883786,CUST-000001,Premier,GB,2019-02,Verified,False,False,False,True
+606728138176973669,CUST-000002,Retail,US,2023-09,Verified,False,False,False,True
+264419407905059310,CUST-000003,Student,SG,2018-01,Verified,False,False,False,True
+263756791415439406,CUST-000004,SME,ES,2022-04,Verified,False,False,False,True
+246169167661273933,CUST-000005,Retail,GB,2024-03,Verified,False,False,False,True
+768436434945698388,CUST-000006,Retail,AE,2021-03,Enhanced Due Diligence,False,False,False,True
+886539501005936162,CUST-000007,SME,US,2021-12,Verified,False,False,False,True
+320081434803039496,CUST-000008,Premier,IE,2019-11,Verified,False,False,False,True
+442163723921078728,CUST-000009,SME,SG,2018-05,Verified,False,False,False,True
+2998887372558569,CUST-000010,SME,AE,2022-06,Verified,False,False,False,True
+45517484512241406,CUST-000011,SME,FR,2024-07,Verified,False,False,False,True
+246700825511871154,CUST-000012,Retail,CA,2025-01,Verified,False,False,False,True
+281401213724354662,CUST-000013,Student,US,2024-03,Verified,False,False,False,True
+594906817873445698,CUST-000014,SME,SG,2022-11,Verified,False,False,False,True
+249615748465308303,CUST-000015,Retail,SG,2024-10,Verified,False,False,False,True
+957110910028490585,CUST-000016,SME,SG,2019-04,Pending Review,False,False,False,True
+710233541031274161,CUST-000017,Retail,DE,2018-10,Enhanced Due Diligence,False,False,False,True
+1053835074633009439,CUST-000018,Student,CA,2025-09,Verified,True,False,True,True
+1148133427243247577,CUST-000019,Student,NL,2020-07,Verified,False,False,False,True
+981860125137779078,CUST-000020,Retail,AE,2018-10,Pending Review,False,False,False,True
+163870747016877544,CUST-000021,Student,DE,2019-06,Verified,False,False,False,True
+577222200404687494,CUST-000022,Student,DE,2019-02,Verified,False,False,False,True
+440725821471311782,CUST-000023,Retail,GB,2021-10,Verified,False,False,False,True
+1088879620853116969,CUST-000024,Student,SG,2023-03,Verified,False,False,False,True
+667854202544287746,CUST-000025,Retail,IE,2019-11,Verified,False,False,False,True
+493050207069902821,CUST-000026,Retail,GB,2023-02,Verified,False,False,True,True
+180653586061245535,CUST-000027,SME,CA,2024-06,Verified,False,False,False,True
+291382675383148796,CUST-000028,Premier,GB,2018-11,Verified,False,False,False,True
+585875122027006935,CUST-000029,Premier,DE,2018-06,Verified,False,False,False,True
+186499808372984441,CUST-000030,SME,SG,2020-09,Verified,False,False,False,True
+767710371338206292,CUST-000031,Retail,CA,2024-12,Enhanced Due Diligence,False,True,False,True
+618061539991327460,CUST-000032,Premier,DE,2020-09,Verified,False,False,False,True
+529721350152239818,CUST-000033,Retail,ES,2025-06,Verified,False,False,False,True
+1054376342709458876,CUST-000034,Premier,IE,2024-10,Verified,False,False,False,True
+646455403059666207,CUST-000035,SME,ES,2025-02,Verified,False,False,False,True
+980708627717825274,CUST-000036,SME,FR,2024-03,Verified,False,False,False,True
+906901778771043120,CUST-000037,SME,FR,2019-08,Verified,False,False,False,True
+576276543027611612,CUST-000038,Premier,NL,2024-04,Verified,False,False,False,True
+904664493072722252,CUST-000039,Premier,DE,2020-01,Verified,False,False,False,True
+995546377267911770,CUST-000040,Retail,DE,2023-04,Verified,False,False,False,True
+1095817946956588938,CUST-000041,Premier,ES,2025-05,Verified,False,False,False,True
+17508513762442371,CUST-000042,Student,ES,2018-04,Verified,False,True,False,True
+1033318739550670801,CUST-000043,Student,ES,2022-11,Verified,False,False,False,True
+137345824585252467,CUST-000044,Student,DE,2024-01,Verified,False,True,False,True
+1070459304141638972,CUST-000045,Retail,DE,2021-07,Verified,False,False,True,True
+695484210856808634,CUST-000046,Student,SG,2025-10,Verified,False,False,False,True
+792492243155335315,CUST-000047,Premier,US,2021-05,Verified,False,False,False,True
+900434523684820099,CUST-000048,SME,DE,2022-12,Verified,False,False,True,True
+611540535713970351,CUST-000049,SME,IE,2025-07,Verified,False,False,False,True
+932358628292143676,CUST-000050,Student,GB,2023-02,Verified,False,False,False,True

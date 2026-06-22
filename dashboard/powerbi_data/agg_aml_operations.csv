@@ -1,0 +1,4 @@
+severity,alert_count,affected_customers,affected_transactions
+high,589,44,528
+low,934,50,934
+medium,2026,50,1239

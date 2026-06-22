@@ -1,0 +1,3 @@
+risk_band,review_priority,grounding_status,safety_status,case_count
+critical,urgent,passed,passed,1
+high,enhanced,passed,passed,4

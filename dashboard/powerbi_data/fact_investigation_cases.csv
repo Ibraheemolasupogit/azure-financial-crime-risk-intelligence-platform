@@ -1,0 +1,6 @@
+case_key,case_id,customer_key,risk_band,review_priority,aml_alert_count,maximum_fraud_probability,primary_risk_driver,generation_mode,grounding_status,safety_status,human_review_required
+238055553160181105,CASE-FD2D9896D5D3,1053835074633009439,critical,urgent,148,0.6271507326567631,43 high/critical AML alerts; 3 structuring alerts; 148 total AML alerts,deterministic_template,passed,passed,True
+345154169956926577,CASE-3ACBFCF3A4C3,611540535713970351,high,enhanced,132,0.927520298455112,23 high/critical AML alerts; 19 structuring alerts; 132 total AML alerts,deterministic_template,passed,passed,True
+228018129723543469,CASE-F21B13E811D4,2998887372558569,high,enhanced,156,0.9568582463123368,30 high/critical AML alerts; 27 structuring alerts; 156 total AML alerts,deterministic_template,passed,passed,True
+1916969840215771,CASE-94118347CAFD,1054376342709458876,high,enhanced,144,0.877346361787433,24 high/critical AML alerts; 21 structuring alerts; 144 total AML alerts,deterministic_template,passed,passed,True
+489852382883256067,CASE-D0AC2E8A1CFD,17508513762442371,high,enhanced,137,0.7123768528527759,45 high/critical AML alerts; 3 structuring alerts; 137 total AML alerts,deterministic_template,passed,passed,True

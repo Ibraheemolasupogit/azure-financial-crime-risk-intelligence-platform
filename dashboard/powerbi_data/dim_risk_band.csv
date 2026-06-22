@@ -1,0 +1,5 @@
+risk_band_key,risk_band,sort_order,description
+1,low,1,Low analytical risk
+2,moderate,2,Moderate analytical risk
+3,high,3,High analytical risk
+4,critical,4,Critical analytical risk

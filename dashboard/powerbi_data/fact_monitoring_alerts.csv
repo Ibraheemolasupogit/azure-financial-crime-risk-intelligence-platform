@@ -1,0 +1,9 @@
+monitoring_alert_key,monitoring_alert_id,monitoring_domain,control_name,metric_name,observed_value,baseline_value,threshold,status,severity,recommended_action_category,generated_date_key
+386174345853636303,MON-AF6C8D56C2971600,numeric_drift,amount_vs_account_average,amount_vs_account_average,0.2289886578532649,,,warning,medium,human_review,20260622
+473142550826111613,MON-FA8BEE5D922FAA2B,fraud_model,average_precision,average_precision,0.0397399754301594,0.0224244541328038,,warning,medium,human_review,20260622
+223024458185989489,MON-61CADAF209972CD6,fraud_model,false_positive_rate,false_positive_rate,0.888268156424581,0.904494382022472,,warning,medium,human_review,20260622
+739434444421268503,MON-2475337BEA2E1A30,fraud_model,precision,precision,0.0304878048780487,0.0301204819277108,,warning,medium,human_review,20260622
+43116390227174501,MON-B5831E477467072D,aml,alerted_transaction_rate,alerted_transaction_rate,0.95708446866485,,0.5,warning,medium,human_review,20260622
+955421682187087246,MON-A2160E1A8D96C205,aml,alert_to_transaction_ratio,alert_to_transaction_ratio,2.417574931880109,,0.5,warning,medium,human_review,20260622
+94040014157374174,MON-38F396941449736E,aml,affected_customer_rate,affected_customer_rate,1.0,,0.9,warning,medium,human_review,20260622
+165329137812439058,MON-4BC348C877F908F4,customer_risk,risk_band_distribution_shift,risk_band_distribution_shift,0.4,,0.2,warning,medium,human_review,20260622

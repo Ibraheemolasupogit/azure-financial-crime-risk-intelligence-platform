@@ -1,0 +1,7 @@
+risk_band,review_priority,customer_count,average_score
+critical,urgent,1,78.1571
+high,enhanced,14,63.36510714285714
+low,routine,1,21.7171
+low,standard,2,28.4644
+moderate,enhanced,5,53.76492
+moderate,standard,27,40.187837037037035

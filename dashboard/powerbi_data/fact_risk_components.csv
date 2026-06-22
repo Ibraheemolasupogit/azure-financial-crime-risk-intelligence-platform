@@ -1,0 +1,251 @@
+customer_key,component_name,normalised_score,configured_weight,weighted_contribution,reason_category
+1101053381991883786,aml_alert,22.42,0.3,6.726,41 total AML alerts
+1101053381991883786,device_session,56.6667,0.15,8.5,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 18 against 5
+1101053381991883786,fraud_model,56.9605,0.15,8.5441,6 transactions exceeded the model operating threshold.
+1101053381991883786,kyc,10.0,0.2,2.0,synthetic profile rating is Medium
+1101053381991883786,transaction_behaviour,59.652,0.2,11.9304,cross_border_ratio reached 0.90 against 0.80; failed_transaction_ratio reached 0.10 against 0.10; night_transaction_ratio reached 0.40 against 0.30
+606728138176973669,aml_alert,12.18,0.3,3.654,21 total AML alerts
+606728138176973669,device_session,51.6667,0.15,7.75,geography_mismatch_count reached 9 against 5
+606728138176973669,fraud_model,79.9438,0.15,11.9916,Maximum model probability 0.845 exceeded 0.700.
+606728138176973669,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+606728138176973669,transaction_behaviour,56.5915,0.2,11.3183,cross_border_ratio reached 0.90 against 0.80; failed_transaction_ratio reached 0.10 against 0.10; night_transaction_ratio reached 0.50 against 0.30
+264419407905059310,aml_alert,32.3,0.3,9.69,4 high/critical AML alerts; 4 structuring alerts; 54 total AML alerts
+264419407905059310,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 27 against 5
+264419407905059310,fraud_model,53.8667,0.15,8.08,Maximum model probability 0.701 exceeded 0.700.
+264419407905059310,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+264419407905059310,transaction_behaviour,62.2451,0.2,12.449,cross_border_ratio reached 0.90 against 0.80; night_transaction_ratio reached 0.47 against 0.30; unique_merchant_country_count reached 11.00 against 10.00
+263756791415439406,aml_alert,28.32,0.3,8.496,4 high/critical AML alerts; 3 structuring alerts; 49 total AML alerts
+263756791415439406,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 27 against 5
+263756791415439406,fraud_model,61.5837,0.15,9.2376,Maximum model probability 0.800 exceeded 0.700.
+263756791415439406,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+263756791415439406,transaction_behaviour,85.0823,0.2,17.0165,maximum_transaction_amount reached 954.15 against 500.00; night_transaction_ratio reached 0.32 against 0.30; unique_merchant_country_count reached 12.00 against 10.00
+246169167661273933,aml_alert,37.92,0.3,11.376,8 high/critical AML alerts; 6 structuring alerts; 55 total AML alerts
+246169167661273933,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 27 against 5
+246169167661273933,fraud_model,60.6199,0.15,9.093,Maximum model probability 0.725 exceeded 0.700.
+246169167661273933,kyc,15.0,0.2,3.0,synthetic profile rating is Medium; customer tenure is 661 days
+246169167661273933,transaction_behaviour,70.8271,0.2,14.1654,cross_border_ratio reached 0.96 against 0.80; night_transaction_ratio reached 0.46 against 0.30; unique_merchant_country_count reached 12.00 against 10.00
+768436434945698388,aml_alert,53.52,0.3,16.056,22 high/critical AML alerts; 4 structuring alerts; 60 total AML alerts
+768436434945698388,device_session,81.6667,0.15,12.25,new_device_transaction_count reached 4 against 4; failed_authentication_count reached 2 against 1; geography_mismatch_count reached 17 against 5
+768436434945698388,fraud_model,67.9604,0.15,10.1941,Maximum model probability 0.855 exceeded 0.700.
+768436434945698388,kyc,23.3333,0.2,4.6667,KYC status is Enhanced Due Diligence
+768436434945698388,transaction_behaviour,56.6804,0.2,11.3361,cross_border_ratio reached 0.94 against 0.80; night_transaction_ratio reached 0.33 against 0.30; unique_merchant_country_count reached 11.00 against 10.00
+886539501005936162,aml_alert,21.06,0.3,6.318,37 total AML alerts
+886539501005936162,device_session,66.6667,0.15,10.0,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 16 against 5; elevated_session_count reached 1 against 1
+886539501005936162,fraud_model,92.0723,0.15,13.8108,Maximum model probability 0.940 exceeded 0.700.
+886539501005936162,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+886539501005936162,transaction_behaviour,49.4016,0.2,9.8803,cross_border_ratio reached 0.94 against 0.80; unique_merchant_country_count reached 10.00 against 10.00; new_device_transaction_count reached 4.00 against 4.00
+320081434803039496,aml_alert,16.16,0.3,4.848,3 high/critical AML alerts; 2 structuring alerts; 25 total AML alerts
+320081434803039496,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 14 against 5
+320081434803039496,fraud_model,58.3404,0.15,8.7511,5 transactions exceeded the model operating threshold.
+320081434803039496,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+320081434803039496,transaction_behaviour,65.8115,0.2,13.1623,maximum_transaction_amount reached 543.37 against 500.00; unique_merchant_country_count reached 12.00 against 10.00; new_device_transaction_count reached 4.00 against 4.00
+442163723921078728,aml_alert,13.5,0.3,4.05,4 high/critical AML alerts; 1 structuring alerts; 19 total AML alerts
+442163723921078728,device_session,58.3333,0.15,8.75,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 10 against 5; elevated_session_count reached 1 against 1
+442163723921078728,fraud_model,43.4309,0.15,6.5146,3 transactions exceeded the model operating threshold.
+442163723921078728,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+442163723921078728,transaction_behaviour,61.3371,0.2,12.2674,maximum_transaction_amount reached 514.60 against 500.00; cross_border_ratio reached 0.90 against 0.80; night_transaction_ratio reached 0.40 against 0.30
+2998887372558569,aml_alert,100.0,0.3,30.0,30 high/critical AML alerts; 27 structuring alerts; 156 total AML alerts
+2998887372558569,device_session,65.0,0.15,9.75,risky_session_count reached 3 against 3; new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 50 against 5
+2998887372558569,fraud_model,74.8582,0.15,11.2287,Maximum model probability 0.957 exceeded 0.700.
+2998887372558569,kyc,10.0,0.2,2.0,synthetic profile rating is Medium
+2998887372558569,transaction_behaviour,84.1344,0.2,16.8269,total_transaction_count reached 53.00 against 40.00; maximum_transaction_amount reached 636.78 against 500.00; cross_border_ratio reached 0.94 against 0.80
+45517484512241406,aml_alert,13.34,0.3,4.002,2 high/critical AML alerts; 2 structuring alerts; 20 total AML alerts
+45517484512241406,device_session,73.3333,0.15,11.0,new_device_transaction_count reached 4 against 4; failed_authentication_count reached 1 against 1; geography_mismatch_count reached 9 against 5
+45517484512241406,fraud_model,21.9736,0.15,3.296,1 transactions exceeded the model operating threshold.
+45517484512241406,kyc,5.0,0.2,1.0,customer tenure is 532 days
+45517484512241406,transaction_behaviour,45.4594,0.2,9.0919,cross_border_ratio reached 1.00 against 0.80; new_device_transaction_count reached 4.00 against 4.00
+246700825511871154,aml_alert,40.3,0.3,12.09,1 high/critical AML alerts; 1 structuring alerts; 68 total AML alerts
+246700825511871154,device_session,65.0,0.15,9.75,new_device_transaction_count reached 4 against 4; failed_authentication_count reached 1 against 1; geography_mismatch_count reached 33 against 5
+246700825511871154,fraud_model,36.4855,0.15,5.4728,8 transactions exceeded the model operating threshold.
+246700825511871154,kyc,10.0,0.2,2.0,customer tenure is 352 days
+246700825511871154,transaction_behaviour,61.2828,0.2,12.2566,cross_border_ratio reached 0.92 against 0.80; night_transaction_ratio reached 0.42 against 0.30; unique_merchant_country_count reached 13.00 against 10.00
+281401213724354662,aml_alert,12.06,0.3,3.618,1 high/critical AML alerts; 21 total AML alerts
+281401213724354662,device_session,56.6667,0.15,8.5,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 10 against 5
+281401213724354662,fraud_model,85.358,0.15,12.8037,Maximum model probability 0.942 exceeded 0.700.
+281401213724354662,kyc,5.0,0.2,1.0,customer tenure is 656 days
+281401213724354662,transaction_behaviour,61.3873,0.2,12.2775,maximum_transaction_amount reached 565.53 against 500.00; cross_border_ratio reached 0.91 against 0.80; night_transaction_ratio reached 0.45 against 0.30
+594906817873445698,aml_alert,48.22,0.3,14.466,7 high/critical AML alerts; 5 structuring alerts; 76 total AML alerts
+594906817873445698,device_session,56.6667,0.15,8.5,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 31 against 5
+594906817873445698,fraud_model,51.0848,0.15,7.6627,8 transactions exceeded the model operating threshold.
+594906817873445698,kyc,10.0,0.2,2.0,synthetic profile rating is Medium
+594906817873445698,transaction_behaviour,84.6341,0.2,16.9268,maximum_transaction_amount reached 840.53 against 500.00; cross_border_ratio reached 0.97 against 0.80; night_transaction_ratio reached 0.34 against 0.30
+249615748465308303,aml_alert,38.14,0.3,11.442,1 high/critical AML alerts; 1 structuring alerts; 67 total AML alerts
+249615748465308303,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 31 against 5
+249615748465308303,fraud_model,48.7615,0.15,7.3142,8 transactions exceeded the model operating threshold.
+249615748465308303,kyc,15.0,0.2,3.0,synthetic profile rating is Medium; customer tenure is 428 days
+249615748465308303,transaction_behaviour,72.3361,0.2,14.4672,cross_border_ratio reached 0.97 against 0.80; night_transaction_ratio reached 0.38 against 0.30; unique_merchant_country_count reached 13.00 against 10.00
+957110910028490585,aml_alert,48.24,0.3,14.472,17 high/critical AML alerts; 58 total AML alerts
+957110910028490585,device_session,75.0,0.15,11.25,risky_session_count reached 3 against 3; new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 17 against 5
+957110910028490585,fraud_model,36.5145,0.15,5.4772,3 transactions exceeded the model operating threshold.
+957110910028490585,kyc,23.3333,0.2,4.6667,KYC status is Pending Review; synthetic profile rating is Medium
+957110910028490585,transaction_behaviour,49.1135,0.2,9.8227,cross_border_ratio reached 0.94 against 0.80; unique_merchant_country_count reached 10.00 against 10.00; new_device_transaction_count reached 4.00 against 4.00
+710233541031274161,aml_alert,40.86,0.3,12.258,16 high/critical AML alerts; 48 total AML alerts
+710233541031274161,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 16 against 5
+710233541031274161,fraud_model,35.843,0.15,5.3764,3 transactions exceeded the model operating threshold.
+710233541031274161,kyc,23.3333,0.2,4.6667,KYC status is Enhanced Due Diligence
+710233541031274161,transaction_behaviour,58.4648,0.2,11.693,cross_border_ratio reached 1.00 against 0.80; night_transaction_ratio reached 0.44 against 0.30; unique_merchant_country_count reached 10.00 against 10.00
+1053835074633009439,aml_alert,100.0,0.3,30.0,43 high/critical AML alerts; 3 structuring alerts; 148 total AML alerts
+1053835074633009439,device_session,65.0,0.15,9.75,risky_session_count reached 4 against 3; new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 39 against 5
+1053835074633009439,fraud_model,47.7239,0.15,7.1586,11 transactions exceeded the model operating threshold.
+1053835074633009439,kyc,70.0,0.2,14.0,synthetic profile rating is High; synthetic PEP indicator is present; synthetic watchlist exposure is present; customer tenure is 97 days
+1053835074633009439,transaction_behaviour,86.2427,0.2,17.2485,maximum_transaction_amount reached 1167.57 against 500.00; cross_border_ratio reached 1.00 against 0.80; night_transaction_ratio reached 0.31 against 0.30
+1148133427243247577,aml_alert,14.14,0.3,4.242,1 high/critical AML alerts; 1 structuring alerts; 22 total AML alerts
+1148133427243247577,device_session,60.0,0.15,9.0,risky_session_count reached 3 against 3; geography_mismatch_count reached 11 against 5
+1148133427243247577,fraud_model,44.1295,0.15,6.6194,3 transactions exceeded the model operating threshold.
+1148133427243247577,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+1148133427243247577,transaction_behaviour,58.2926,0.2,11.6585,cross_border_ratio reached 1.00 against 0.80
+981860125137779078,aml_alert,56.48,0.3,16.944,22 high/critical AML alerts; 1 structuring alerts; 66 total AML alerts
+981860125137779078,device_session,56.6667,0.15,8.5,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 20 against 5
+981860125137779078,fraud_model,76.2581,0.15,11.4387,Maximum model probability 0.910 exceeded 0.700.
+981860125137779078,kyc,13.3333,0.2,2.6667,KYC status is Pending Review
+981860125137779078,transaction_behaviour,71.6911,0.2,14.3382,maximum_transaction_amount reached 598.57 against 500.00; cross_border_ratio reached 1.00 against 0.80; night_transaction_ratio reached 0.35 against 0.30
+163870747016877544,aml_alert,55.94,0.3,16.782,8 high/critical AML alerts; 7 structuring alerts; 89 total AML alerts
+163870747016877544,device_session,40.0,0.15,6.0,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 35 against 5
+163870747016877544,fraud_model,52.573,0.15,7.886,10 transactions exceeded the model operating threshold.
+163870747016877544,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+163870747016877544,transaction_behaviour,77.3127,0.2,15.4625,cross_border_ratio reached 0.92 against 0.80; failed_transaction_ratio reached 0.11 against 0.10; unique_merchant_country_count reached 13.00 against 10.00
+577222200404687494,aml_alert,48.0,0.3,14.4,6 high/critical AML alerts; 5 structuring alerts; 79 total AML alerts
+577222200404687494,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 39 against 5
+577222200404687494,fraud_model,50.4846,0.15,7.5727,11 transactions exceeded the model operating threshold.
+577222200404687494,kyc,10.0,0.2,2.0,synthetic profile rating is Medium
+577222200404687494,transaction_behaviour,75.8139,0.2,15.1628,total_transaction_count reached 41.00 against 40.00; cross_border_ratio reached 0.95 against 0.80; failed_transaction_ratio reached 0.12 against 0.10
+440725821471311782,aml_alert,72.68,0.3,21.804,12 high/critical AML alerts; 9 structuring alerts; 112 total AML alerts
+440725821471311782,device_session,56.6667,0.15,8.5,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 44 against 5
+440725821471311782,fraud_model,54.3934,0.15,8.159,7 transactions exceeded the model operating threshold.
+440725821471311782,kyc,10.0,0.2,2.0,synthetic profile rating is Medium
+440725821471311782,transaction_behaviour,86.3025,0.2,17.2605,total_transaction_count reached 51.00 against 40.00; maximum_transaction_amount reached 1390.09 against 500.00; cross_border_ratio reached 0.86 against 0.80
+1088879620853116969,aml_alert,7.74,0.3,2.322,1 high/critical AML alerts; 14 total AML alerts
+1088879620853116969,device_session,43.3333,0.15,6.5,geography_mismatch_count reached 8 against 5
+1088879620853116969,fraud_model,44.4555,0.15,6.6683,1 transactions exceeded the model operating threshold.
+1088879620853116969,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+1088879620853116969,transaction_behaviour,65.2432,0.2,13.0486,maximum_transaction_amount reached 1100.56 against 500.00; cross_border_ratio reached 1.00 against 0.80; failed_transaction_ratio reached 0.12 against 0.10
+667854202544287746,aml_alert,47.38,0.3,14.214,6 high/critical AML alerts; 5 structuring alerts; 77 total AML alerts
+667854202544287746,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 40 against 5
+667854202544287746,fraud_model,77.0231,0.15,11.5535,Maximum model probability 0.919 exceeded 0.700.
+667854202544287746,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+667854202544287746,transaction_behaviour,90.6489,0.2,18.1298,total_transaction_count reached 43.00 against 40.00; maximum_transaction_amount reached 1548.05 against 500.00; cross_border_ratio reached 0.93 against 0.80
+493050207069902821,aml_alert,63.0,0.3,18.9,29 high/critical AML alerts; 2 structuring alerts; 68 total AML alerts
+493050207069902821,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 24 against 5
+493050207069902821,fraud_model,62.2773,0.15,9.3416,Maximum model probability 0.776 exceeded 0.700.
+493050207069902821,kyc,20.0,0.2,4.0,synthetic watchlist exposure is present
+493050207069902821,transaction_behaviour,83.0316,0.2,16.6063,maximum_transaction_amount reached 1131.50 against 500.00; cross_border_ratio reached 0.96 against 0.80; failed_transaction_ratio reached 0.16 against 0.10
+180653586061245535,aml_alert,20.56,0.3,6.168,2 high/critical AML alerts; 1 structuring alerts; 35 total AML alerts
+180653586061245535,device_session,58.3333,0.15,8.75,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 16 against 5; elevated_session_count reached 1 against 1
+180653586061245535,fraud_model,17.0513,0.15,2.5577,2 transactions exceeded the model operating threshold.
+180653586061245535,kyc,5.0,0.2,1.0,customer tenure is 550 days
+180653586061245535,transaction_behaviour,73.7952,0.2,14.759,maximum_transaction_amount reached 1262.15 against 500.00; cross_border_ratio reached 0.83 against 0.80; night_transaction_ratio reached 0.33 against 0.30
+291382675383148796,aml_alert,60.86,0.3,18.258,3 high/critical AML alerts; 1 structuring alerts; 101 total AML alerts
+291382675383148796,device_session,56.6667,0.15,8.5,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 42 against 5
+291382675383148796,fraud_model,70.9205,0.15,10.6381,Maximum model probability 0.851 exceeded 0.700.
+291382675383148796,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+291382675383148796,transaction_behaviour,87.2606,0.2,17.4521,total_transaction_count reached 44.00 against 40.00; maximum_transaction_amount reached 1118.96 against 500.00; cross_border_ratio reached 0.95 against 0.80
+585875122027006935,aml_alert,33.7,0.3,10.11,1 high/critical AML alerts; 57 total AML alerts
+585875122027006935,device_session,75.0,0.15,11.25,risky_session_count reached 3 against 3; new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 22 against 5
+585875122027006935,fraud_model,69.8107,0.15,10.4716,Maximum model probability 0.872 exceeded 0.700.
+585875122027006935,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+585875122027006935,transaction_behaviour,75.0536,0.2,15.0107,maximum_transaction_amount reached 630.56 against 500.00; cross_border_ratio reached 0.96 against 0.80; night_transaction_ratio reached 0.30 against 0.30
+186499808372984441,aml_alert,41.02,0.3,12.306,7 high/critical AML alerts; 6 structuring alerts; 62 total AML alerts
+186499808372984441,device_session,66.6667,0.15,10.0,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 27 against 5; elevated_session_count reached 1 against 1
+186499808372984441,fraud_model,52.3015,0.15,7.8452,5 transactions exceeded the model operating threshold.
+186499808372984441,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+186499808372984441,transaction_behaviour,78.823,0.2,15.7646,maximum_transaction_amount reached 513.33 against 500.00; cross_border_ratio reached 0.89 against 0.80; night_transaction_ratio reached 0.39 against 0.30
+767710371338206292,aml_alert,38.62,0.3,11.586,16 high/critical AML alerts; 44 total AML alerts
+767710371338206292,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 14 against 5
+767710371338206292,fraud_model,0.0,0.15,0.0,No elevated fraud-model score observed in available predictions.
+767710371338206292,kyc,61.6667,0.2,12.3333,KYC status is Enhanced Due Diligence; screening status is Escalated; customer tenure is 378 days
+767710371338206292,transaction_behaviour,55.9715,0.2,11.1943,cross_border_ratio reached 0.88 against 0.80; night_transaction_ratio reached 0.31 against 0.30; unique_merchant_country_count reached 10.00 against 10.00
+618061539991327460,aml_alert,8.4,0.3,2.52,15 total AML alerts
+618061539991327460,device_session,43.3333,0.15,6.5,geography_mismatch_count reached 10 against 5
+618061539991327460,fraud_model,27.8032,0.15,4.1705,3 transactions exceeded the model operating threshold.
+618061539991327460,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+618061539991327460,transaction_behaviour,42.6331,0.2,8.5266,cross_border_ratio reached 0.91 against 0.80; night_transaction_ratio reached 0.36 against 0.30
+529721350152239818,aml_alert,86.7,0.3,26.01,19 high/critical AML alerts; 16 structuring alerts; 121 total AML alerts
+529721350152239818,device_session,65.0,0.15,9.75,new_device_transaction_count reached 4 against 4; failed_authentication_count reached 1 against 1; geography_mismatch_count reached 45 against 5
+529721350152239818,fraud_model,61.4806,0.15,9.2221,Maximum model probability 0.880 exceeded 0.700.
+529721350152239818,kyc,10.0,0.2,2.0,customer tenure is 205 days
+529721350152239818,transaction_behaviour,90.2545,0.2,18.0509,total_transaction_count reached 47.00 against 40.00; maximum_transaction_amount reached 690.00 against 500.00; cross_border_ratio reached 0.94 against 0.80
+1054376342709458876,aml_alert,100.0,0.3,30.0,24 high/critical AML alerts; 21 structuring alerts; 144 total AML alerts
+1054376342709458876,device_session,58.3333,0.15,8.75,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 55 against 5; elevated_session_count reached 1 against 1
+1054376342709458876,fraud_model,64.1977,0.15,9.6297,Maximum model probability 0.877 exceeded 0.700.
+1054376342709458876,kyc,15.0,0.2,3.0,synthetic profile rating is Medium; customer tenure is 445 days
+1054376342709458876,transaction_behaviour,84.6085,0.2,16.9217,total_transaction_count reached 56.00 against 40.00; maximum_transaction_amount reached 567.23 against 500.00; cross_border_ratio reached 0.93 against 0.80
+646455403059666207,aml_alert,78.68,0.3,23.604,10 high/critical AML alerts; 9 structuring alerts; 119 total AML alerts
+646455403059666207,device_session,66.6667,0.15,10.0,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 41 against 5; elevated_session_count reached 2 against 1
+646455403059666207,fraud_model,46.6016,0.15,6.9902,8 transactions exceeded the model operating threshold.
+646455403059666207,kyc,10.0,0.2,2.0,customer tenure is 324 days
+646455403059666207,transaction_behaviour,69.5535,0.2,13.9107,total_transaction_count reached 42.00 against 40.00; cross_border_ratio reached 0.95 against 0.80; unique_merchant_country_count reached 13.00 against 10.00
+980708627717825274,aml_alert,83.84,0.3,25.152,8 high/critical AML alerts; 7 structuring alerts; 130 total AML alerts
+980708627717825274,device_session,75.0,0.15,11.25,risky_session_count reached 3 against 3; new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 43 against 5
+980708627717825274,fraud_model,54.2134,0.15,8.132,Maximum model probability 0.771 exceeded 0.700.
+980708627717825274,kyc,5.0,0.2,1.0,customer tenure is 663 days
+980708627717825274,transaction_behaviour,72.2404,0.2,14.4481,total_transaction_count reached 46.00 against 40.00; cross_border_ratio reached 0.89 against 0.80; unique_merchant_country_count reached 13.00 against 10.00
+906901778771043120,aml_alert,66.24,0.3,19.872,9 high/critical AML alerts; 8 structuring alerts; 100 total AML alerts
+906901778771043120,device_session,65.0,0.15,9.75,new_device_transaction_count reached 4 against 4; failed_authentication_count reached 1 against 1; geography_mismatch_count reached 36 against 5
+906901778771043120,fraud_model,48.3551,0.15,7.2533,Maximum model probability 0.745 exceeded 0.700.
+906901778771043120,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+906901778771043120,transaction_behaviour,87.8163,0.2,17.5633,maximum_transaction_amount reached 1000.90 against 500.00; cross_border_ratio reached 0.95 against 0.80; night_transaction_ratio reached 0.32 against 0.30
+576276543027611612,aml_alert,32.82,0.3,9.846,2 high/critical AML alerts; 2 structuring alerts; 56 total AML alerts
+576276543027611612,device_session,40.0,0.15,6.0,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 34 against 5
+576276543027611612,fraud_model,43.6909,0.15,6.5536,5 transactions exceeded the model operating threshold.
+576276543027611612,kyc,5.0,0.2,1.0,customer tenure is 629 days
+576276543027611612,transaction_behaviour,66.7989,0.2,13.3598,cross_border_ratio reached 0.89 against 0.80; night_transaction_ratio reached 0.34 against 0.30; unique_merchant_country_count reached 13.00 against 10.00
+904664493072722252,aml_alert,11.88,0.3,3.564,20 total AML alerts
+904664493072722252,device_session,51.6667,0.15,7.75,geography_mismatch_count reached 8 against 5
+904664493072722252,fraud_model,63.5244,0.15,9.5287,Maximum model probability 0.725 exceeded 0.700.
+904664493072722252,kyc,10.0,0.2,2.0,synthetic profile rating is Medium
+904664493072722252,transaction_behaviour,51.0118,0.2,10.2024,cross_border_ratio reached 1.00 against 0.80; failed_transaction_ratio reached 0.25 against 0.10; night_transaction_ratio reached 0.50 against 0.30
+995546377267911770,aml_alert,42.5,0.3,12.75,8 high/critical AML alerts; 8 structuring alerts; 62 total AML alerts
+995546377267911770,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 29 against 5
+995546377267911770,fraud_model,37.2981,0.15,5.5947,4 transactions exceeded the model operating threshold.
+995546377267911770,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+995546377267911770,transaction_behaviour,73.8137,0.2,14.7627,cross_border_ratio reached 0.85 against 0.80; unique_merchant_country_count reached 12.00 against 10.00; new_device_transaction_count reached 4.00 against 4.00
+1095817946956588938,aml_alert,79.58,0.3,23.874,30 high/critical AML alerts; 28 structuring alerts; 95 total AML alerts
+1095817946956588938,device_session,40.0,0.15,6.0,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 40 against 5
+1095817946956588938,fraud_model,59.8372,0.15,8.9756,Maximum model probability 0.755 exceeded 0.700.
+1095817946956588938,kyc,20.0,0.2,4.0,synthetic profile rating is Medium; customer tenure is 219 days
+1095817946956588938,transaction_behaviour,95.0167,0.2,19.0033,total_transaction_count reached 43.00 against 40.00; maximum_transaction_amount reached 1067.76 against 500.00; cross_border_ratio reached 0.93 against 0.80
+17508513762442371,aml_alert,100.0,0.3,30.0,45 high/critical AML alerts; 3 structuring alerts; 137 total AML alerts
+17508513762442371,device_session,66.6667,0.15,10.0,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 40 against 5; elevated_session_count reached 1 against 1
+17508513762442371,fraud_model,53.4165,0.15,8.0125,Maximum model probability 0.712 exceeded 0.700.
+17508513762442371,kyc,20.0,0.2,4.0,screening status is Potential Match
+17508513762442371,transaction_behaviour,79.6566,0.2,15.9313,total_transaction_count reached 42.00 against 40.00; cross_border_ratio reached 0.88 against 0.80; night_transaction_ratio reached 0.38 against 0.30
+1033318739550670801,aml_alert,71.4,0.3,21.42,14 high/critical AML alerts; 11 structuring alerts; 103 total AML alerts
+1033318739550670801,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 43 against 5
+1033318739550670801,fraud_model,57.4992,0.15,8.6249,9 transactions exceeded the model operating threshold.
+1033318739550670801,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+1033318739550670801,transaction_behaviour,97.9457,0.2,19.5891,total_transaction_count reached 49.00 against 40.00; total_transaction_amount reached 7136.67 against 5000.00; maximum_transaction_amount reached 4636.31 against 500.00
+137345824585252467,aml_alert,90.14,0.3,27.042,41 high/critical AML alerts; 6 structuring alerts; 100 total AML alerts
+137345824585252467,device_session,40.0,0.15,6.0,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 31 against 5
+137345824585252467,fraud_model,74.3461,0.15,11.1519,Maximum model probability 0.936 exceeded 0.700.
+137345824585252467,kyc,25.0,0.2,5.0,screening status is Potential Match; customer tenure is 717 days
+137345824585252467,transaction_behaviour,82.2764,0.2,16.4553,maximum_transaction_amount reached 715.30 against 500.00; cross_border_ratio reached 0.94 against 0.80; night_transaction_ratio reached 0.33 against 0.30
+1070459304141638972,aml_alert,95.82,0.3,28.746,31 high/critical AML alerts; 2 structuring alerts; 116 total AML alerts
+1070459304141638972,device_session,66.6667,0.15,10.0,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 29 against 5; elevated_session_count reached 1 against 1
+1070459304141638972,fraud_model,54.4736,0.15,8.171,5 transactions exceeded the model operating threshold.
+1070459304141638972,kyc,20.0,0.2,4.0,synthetic watchlist exposure is present
+1070459304141638972,transaction_behaviour,64.6978,0.2,12.9396,cross_border_ratio reached 0.97 against 0.80; night_transaction_ratio reached 0.31 against 0.30; unique_merchant_country_count reached 12.00 against 10.00
+695484210856808634,aml_alert,32.4,0.3,9.72,2 high/critical AML alerts; 55 total AML alerts
+695484210856808634,device_session,56.6667,0.15,8.5,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 26 against 5
+695484210856808634,fraud_model,61.6407,0.15,9.2461,Maximum model probability 0.752 exceeded 0.700.
+695484210856808634,kyc,10.0,0.2,2.0,customer tenure is 67 days
+695484210856808634,transaction_behaviour,59.8401,0.2,11.968,cross_border_ratio reached 1.00 against 0.80; night_transaction_ratio reached 0.35 against 0.30; unique_merchant_country_count reached 11.00 against 10.00
+792492243155335315,aml_alert,31.82,0.3,9.546,59 total AML alerts
+792492243155335315,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 28 against 5
+792492243155335315,fraud_model,77.7825,0.15,11.6674,Maximum model probability 0.942 exceeded 0.700.
+792492243155335315,kyc,10.0,0.2,2.0,synthetic profile rating is Medium
+792492243155335315,transaction_behaviour,62.4186,0.2,12.4837,cross_border_ratio reached 0.93 against 0.80; night_transaction_ratio reached 0.60 against 0.30; unique_merchant_country_count reached 11.00 against 10.00
+900434523684820099,aml_alert,98.22,0.3,29.466,41 high/critical AML alerts; 9 structuring alerts; 108 total AML alerts
+900434523684820099,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 30 against 5
+900434523684820099,fraud_model,67.266,0.15,10.0899,Maximum model probability 0.858 exceeded 0.700.
+900434523684820099,kyc,20.0,0.2,4.0,synthetic watchlist exposure is present
+900434523684820099,transaction_behaviour,82.0284,0.2,16.4057,maximum_transaction_amount reached 859.94 against 500.00; cross_border_ratio reached 0.97 against 0.80; night_transaction_ratio reached 0.35 against 0.30
+611540535713970351,aml_alert,96.62,0.3,28.986,23 high/critical AML alerts; 19 structuring alerts; 132 total AML alerts
+611540535713970351,device_session,56.6667,0.15,8.5,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 48 against 5
+611540535713970351,fraud_model,71.8599,0.15,10.779,Maximum model probability 0.928 exceeded 0.700.
+611540535713970351,kyc,10.0,0.2,2.0,customer tenure is 167 days
+611540535713970351,transaction_behaviour,100.0,0.2,20.0,total_transaction_count reached 55.00 against 40.00; total_transaction_amount reached 5023.66 against 5000.00; maximum_transaction_amount reached 2234.68 against 500.00
+932358628292143676,aml_alert,19.9,0.3,5.97,5 high/critical AML alerts; 4 structuring alerts; 28 total AML alerts
+932358628292143676,device_session,48.3333,0.15,7.25,new_device_transaction_count reached 4 against 4; geography_mismatch_count reached 12 against 5
+932358628292143676,fraud_model,64.2416,0.15,9.6362,2 transactions exceeded the model operating threshold.
+932358628292143676,kyc,0.0,0.2,0.0,No elevated KYC indicators observed.
+932358628292143676,transaction_behaviour,65.8969,0.2,13.1794,cross_border_ratio reached 0.80 against 0.80; night_transaction_ratio reached 0.33 against 0.30; unique_merchant_country_count reached 11.00 against 10.00

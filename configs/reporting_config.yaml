@@ -1,0 +1,40 @@
+customers_path: data/raw/customers.csv
+accounts_path: data/raw/accounts.csv
+transactions_path: data/processed/transaction_features.csv
+fraud_predictions_path: outputs/fraud_test_predictions.csv
+fraud_metrics_path: outputs/fraud_model_metrics.json
+aml_alerts_path: outputs/aml_transaction_alerts.csv
+aml_rule_summary_path: outputs/aml_rule_summary.csv
+customer_risk_path: outputs/customer_risk_scores.csv
+risk_components_path: outputs/customer_risk_components.csv
+model_contributions_path: outputs/fraud_feature_contributions.csv
+reason_codes_path: outputs/fraud_prediction_reason_codes.csv
+local_explanations_path: outputs/fraud_local_explanations.csv
+investigation_cases_path: outputs/investigation_case_summaries.csv
+monitoring_alerts_path: outputs/platform_monitoring_alerts.csv
+pipeline_health_path: outputs/pipeline_health.csv
+monitoring_summary_path: outputs/platform_monitoring_summary.json
+output_directory: dashboard/powerbi_data
+quality_summary_path: outputs/reporting_quality_summary.json
+quality_report_path: reports/powerbi_reporting_quality_report.md
+reference_timestamp: "2026-06-22T00:00:00Z"
+reporting_version: "1.0.0"
+currency_display: "£#,0.00"
+score_decimal_places: 2
+probability_decimal_places: 4
+include_transaction_detail: true
+include_explanation_detail: true
+include_investigation_outputs: true
+maximum_explanation_rows: 5000
+maximum_investigation_cases: 10
+required_dimensions: [dim_customer, dim_account, dim_date, dim_time, dim_aml_rule, dim_risk_band, dim_monitoring_control]
+required_fact_tables: [fact_transactions, fact_fraud_predictions, fact_aml_alerts, fact_customer_risk, fact_risk_components, fact_model_explanations, fact_investigation_cases, fact_monitoring_alerts, fact_pipeline_health]
+expected_relationships:
+  - dim_customer.customer_key -> fact_transactions.customer_key
+  - dim_account.account_key -> fact_transactions.account_key
+  - dim_date.date_key -> fact_transactions.date_key
+  - dim_time.time_key -> fact_transactions.time_key
+  - dim_aml_rule.aml_rule_key -> fact_aml_alerts.aml_rule_key
+KPI_definitions_path: dashboard/kpi_definitions.md
+data_dictionary_path: dashboard/powerbi_data/reporting_data_dictionary.csv
+semantic_model_path: dashboard/semantic_model_spec.md

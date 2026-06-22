@@ -1,0 +1,5 @@
+monitoring_domain,status,alert_count
+aml,warning,3
+customer_risk,warning,1
+fraud_model,warning,3
+numeric_drift,warning,1

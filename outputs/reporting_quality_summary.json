@@ -1,0 +1,160 @@
+{
+  "run_timestamp": "2026-06-22T22:39:16+00:00",
+  "reporting_version": "1.0.0",
+  "tables_generated": [
+    "agg_aml_operations",
+    "agg_customer_risk_distribution",
+    "agg_executive_kpis",
+    "agg_fraud_performance",
+    "agg_investigation_workload",
+    "agg_monitoring_health",
+    "dim_account",
+    "dim_aml_rule",
+    "dim_customer",
+    "dim_date",
+    "dim_monitoring_control",
+    "dim_risk_band",
+    "dim_time",
+    "fact_aml_alerts",
+    "fact_customer_risk",
+    "fact_fraud_predictions",
+    "fact_investigation_cases",
+    "fact_model_explanations",
+    "fact_monitoring_alerts",
+    "fact_pipeline_health",
+    "fact_risk_components",
+    "fact_transactions",
+    "reporting_data_dictionary"
+  ],
+  "rows_by_table": {
+    "dim_customer": 50,
+    "dim_account": 101,
+    "dim_date": 538,
+    "dim_time": 24,
+    "dim_aml_rule": 10,
+    "dim_risk_band": 4,
+    "dim_monitoring_control": 8,
+    "fact_transactions": 1468,
+    "fact_fraud_predictions": 367,
+    "fact_aml_alerts": 3549,
+    "fact_customer_risk": 50,
+    "fact_risk_components": 250,
+    "fact_model_explanations": 2202,
+    "fact_investigation_cases": 5,
+    "fact_monitoring_alerts": 8,
+    "fact_pipeline_health": 14,
+    "agg_executive_kpis": 21,
+    "agg_fraud_performance": 1,
+    "agg_aml_operations": 3,
+    "agg_customer_risk_distribution": 6,
+    "agg_monitoring_health": 4,
+    "agg_investigation_workload": 2,
+    "reporting_data_dictionary": 196
+  },
+  "relationship_checks": [
+    {
+      "name": "unique_dim_customer",
+      "status": "passed",
+      "category": "relationship",
+      "detail": ""
+    },
+    {
+      "name": "unique_dim_account",
+      "status": "passed",
+      "category": "relationship",
+      "detail": ""
+    },
+    {
+      "name": "unique_dim_date",
+      "status": "passed",
+      "category": "relationship",
+      "detail": ""
+    },
+    {
+      "name": "unique_dim_aml_rule",
+      "status": "passed",
+      "category": "relationship",
+      "detail": ""
+    },
+    {
+      "name": "fk_fact_transactions_customer_key",
+      "status": "passed",
+      "category": "relationship",
+      "detail": ""
+    },
+    {
+      "name": "fk_fact_transactions_account_key",
+      "status": "passed",
+      "category": "relationship",
+      "detail": ""
+    },
+    {
+      "name": "fk_fact_transactions_date_key",
+      "status": "passed",
+      "category": "relationship",
+      "detail": ""
+    },
+    {
+      "name": "fk_fact_aml_alerts_aml_rule_key",
+      "status": "passed",
+      "category": "relationship",
+      "detail": ""
+    },
+    {
+      "name": "fk_fact_aml_alerts_customer_key",
+      "status": "passed",
+      "category": "relationship",
+      "detail": ""
+    }
+  ],
+  "reconciliation_checks": [
+    {
+      "name": "reconcile_transactions",
+      "status": "passed",
+      "category": "reconciliation",
+      "detail": ""
+    },
+    {
+      "name": "reconcile_aml_alerts",
+      "status": "passed",
+      "category": "reconciliation",
+      "detail": ""
+    },
+    {
+      "name": "reconcile_customer_risk",
+      "status": "passed",
+      "category": "reconciliation",
+      "detail": ""
+    },
+    {
+      "name": "reconcile_investigations",
+      "status": "passed",
+      "category": "reconciliation",
+      "detail": ""
+    },
+    {
+      "name": "reconcile_monitoring",
+      "status": "passed",
+      "category": "reconciliation",
+      "detail": ""
+    }
+  ],
+  "privacy_checks": [
+    {
+      "name": "privacy_prohibited_columns",
+      "status": "passed",
+      "category": "privacy",
+      "detail": "[]"
+    }
+  ],
+  "KPI_checks": [
+    {
+      "KPI_count": 21,
+      "status": "passed"
+    }
+  ],
+  "failed_checks": [],
+  "warnings": [],
+  "overall_status": "passed",
+  "synthetic_data_statement": "All reporting tables contain synthetic analytical data."
+}

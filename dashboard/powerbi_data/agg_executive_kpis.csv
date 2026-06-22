@@ -1,0 +1,22 @@
+kpi_id,kpi_name,kpi_value,display_value,unit,status,description,source_table,calculation_note,reporting_timestamp,reporting_version
+KPI001,Total Customers,50,50,count,synthetic,Total Customers,fact_customer_risk,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI002,Total Accounts,101,101,count,synthetic,Total Accounts,dim_account,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI003,Total Transactions,1468,1468,count,synthetic,Total Transactions,fact_transactions,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI004,Total Transaction Value,94801.01999999999,94801.02,currency,synthetic,Total Transaction Value,fact_transactions,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI005,Fraud Prevalence,0.027247956403269755,2.72%,percentage,synthetic,Fraud Prevalence,fact_fraud_predictions,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI006,Predicted Fraud Count,330,330,count,synthetic,Predicted Fraud Count,fact_fraud_predictions,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI007,Fraud Precision,0.030303030303030304,3.03%,percentage,synthetic,Fraud Precision,fact_fraud_predictions,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI008,Fraud Recall,1.0,100.00%,percentage,synthetic,Fraud Recall,fact_fraud_predictions,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI009,Fraud F1,0.058823529411764705,0.06,decimal,synthetic,Fraud F1,fact_fraud_predictions,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI010,Fraud Average Precision,0.024950569458029963,2.50%,percentage,synthetic,Fraud Average Precision,fact_fraud_predictions,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI011,Fraud False Positives,320,320,count,synthetic,Fraud False Positives,fact_fraud_predictions,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI012,Total AML Alerts,3549,3549,count,synthetic,Total AML Alerts,fact_aml_alerts,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI013,AML Alerted Transaction Rate,0.9570844686648501,95.71%,percentage,synthetic,AML Alerted Transaction Rate,fact_aml_alerts,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI014,Affected AML Customers,50,50,count,synthetic,Affected AML Customers,fact_aml_alerts,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI015,High Severity AML Alerts,589,589,count,synthetic,High Severity AML Alerts,fact_aml_alerts,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI016,High or Critical Risk Customers,15,15,count,synthetic,High or Critical Risk Customers,fact_customer_risk,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI017,Urgent or Enhanced Reviews,20,20,count,synthetic,Urgent or Enhanced Reviews,fact_customer_risk,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI018,Investigation Cases,5,5,count,synthetic,Investigation Cases,fact_investigation_cases,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI019,Monitoring Warnings,8,8,count,synthetic,Monitoring Warnings,fact_monitoring_alerts,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI020,Monitoring Critical,0,0,count,synthetic,Monitoring Critical,fact_monitoring_alerts,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0
+KPI021,Overall Platform Status,warning,warning,status,synthetic,Overall Platform Status,fact_monitoring_alerts,Reconciled to generated local source output.,2026-06-22T00:00:00Z,1.0.0

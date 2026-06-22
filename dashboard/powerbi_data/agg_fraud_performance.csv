@@ -1,0 +1,2 @@
+training_row_count,test_row_count,training_fraud_rate,test_fraud_rate,accuracy,precision,recall,f1_score,roc_auc,average_precision,confusion_matrix,true_positives,false_positives,true_negatives,false_negatives,selected_threshold,predicted_fraud_count,false_positive_rate,false_negative_rate
+1101,367,0.04178019981834696,0.027247956403269755,0.12806539509536785,0.030303030303030304,1.0,0.058823529411764705,0.43221288515406164,0.024950569458029963,"[[37, 320], [0, 10]]",10,320,37,0,0.05,330,0.896358543417367,0.0
