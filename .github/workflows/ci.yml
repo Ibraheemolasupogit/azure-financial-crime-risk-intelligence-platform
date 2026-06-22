@@ -5,8 +5,10 @@ on:
   pull_request:
 
 jobs:
-  test:
+  full-local-validation:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
       - name: Check out repository
@@ -22,35 +24,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generate synthetic data
-        run: python scripts/generate_synthetic_data.py
+      - name: Run complete local workflow
+        run: ./scripts/run_all_local.sh
 
-      - name: Run data validation
-        run: python scripts/run_data_validation.py
+      - name: Validate infrastructure scaffold
+        run: python scripts/validate_infrastructure.py
 
-      - name: Build feature tables
-        run: python scripts/build_features.py
+      - name: Run final structural audit
+        run: python scripts/run_final_audit.py --skip-runtime-checks
 
-      - name: Train fraud baseline model
-        run: python scripts/train_fraud_baseline.py
+      - name: Check Python syntax
+        run: python -m compileall -q src scripts tests deployment/functions
 
-      - name: Run AML rule engine
-        run: python scripts/run_aml_rules.py
-
-      - name: Score customer risk
-        run: python scripts/score_customer_risk.py
-
-      - name: Generate fraud model explanations
-        run: python scripts/explain_fraud_model.py
-
-      - name: Generate investigation reports
-        run: python scripts/generate_investigation_reports.py
-
-      - name: Run platform monitoring
-        run: python scripts/run_platform_monitoring.py
-
-      - name: Build Power BI-ready outputs
-        run: python scripts/build_powerbi_outputs.py
+      - name: Check formatting
+        run: >-
+          ruff format --check
+          scripts/validate_infrastructure.py
+          scripts/run_final_audit.py
+          tests/test_final_portfolio.py
+          deployment/functions/function_app_placeholder.py
 
       - name: Run ruff
         run: ruff check .

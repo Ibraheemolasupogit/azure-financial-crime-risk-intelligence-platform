@@ -13,6 +13,6 @@
 | Milestone 9 | GenAI investigation assistant |
 | Milestone 10 | Monitoring and drift reporting |
 | Milestone 11 | Power BI-ready outputs |
-| Milestone 12 | Azure architecture and portfolio polish |
+| Milestone 12 | Azure architecture and portfolio polish (complete) |
 
-The repository is currently at Milestone 1 only.
+All 12 portfolio milestones are represented. Azure deployment remains conceptual and non-executing.

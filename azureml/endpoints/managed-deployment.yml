@@ -1,0 +1,16 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: blue
+endpoint_name: <ENDPOINT_NAME_PLACEHOLDER>
+model: azureml:<REGISTERED_MODEL_NAME_PLACEHOLDER>:<MODEL_VERSION_PLACEHOLDER>
+environment: azureml:fraud-model-environment@latest
+code_configuration:
+  code: <INFERENCE_CODE_PATH_PLACEHOLDER>
+  scoring_script: score.py
+instance_type: Standard_DS3_v2
+instance_count: 1
+request_settings:
+  request_timeout_ms: 3000
+liveness_probe:
+  initial_delay: 30
+tags:
+  deployment_status: illustrative

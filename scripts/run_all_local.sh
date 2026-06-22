@@ -2,7 +2,7 @@
 set -euo pipefail
 
 echo "Azure Financial Crime Risk Intelligence Platform"
-echo "Current status: Milestone 11 - Power BI-ready analytics"
+echo "Current status: Milestone 12 - Azure architecture and portfolio assurance"
 echo "Azure credentials required: no"
 echo "Synthetic data only: yes"
 echo
@@ -43,6 +43,14 @@ required_paths=(
   "scripts/generate_investigation_reports.py"
   "scripts/run_platform_monitoring.py"
   "scripts/build_powerbi_outputs.py"
+  "scripts/validate_infrastructure.py"
+  "scripts/run_final_audit.py"
+  "diagrams/azure_reference_architecture.mmd"
+  "infra/main.bicep"
+  "azureml/README.md"
+  "docs/security_architecture.md"
+  "docs/threat_model.md"
+  "docs/portfolio_evidence.md"
   "docs/project_overview.md"
   "tests/test_repo_structure.py"
   "tests/test_data_generation.py"
@@ -56,6 +64,7 @@ required_paths=(
   "tests/test_genai_investigation_assistant.py"
   "tests/test_platform_monitoring.py"
   "tests/test_powerbi_reporting.py"
+  "tests/test_final_portfolio.py"
 )
 
 for path in "${required_paths[@]}"; do
@@ -97,10 +106,16 @@ echo
 echo "Building Power BI-ready analytical outputs..."
 "${PYTHON_BIN}" scripts/build_powerbi_outputs.py
 echo
+echo "Validating illustrative infrastructure scaffold..."
+"${PYTHON_BIN}" scripts/validate_infrastructure.py
+echo
+echo "Running final portfolio audit..."
+"${PYTHON_BIN}" scripts/run_final_audit.py
+echo
 echo "Running tests..."
 "${PYTHON_BIN}" -m pytest
 echo
 echo "Running lint checks..."
 "${PYTHON_BIN}" -m ruff check .
 echo
-echo "Milestone 11 local checks passed."
+echo "Final CI checks passed. All 12 milestones are represented."

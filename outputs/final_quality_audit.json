@@ -1,0 +1,155 @@
+{
+  "audit_timestamp": "2026-06-22T23:15:59.002787+00:00",
+  "overall_status": "passed",
+  "milestones_represented": 12,
+  "passed_checks": 19,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "name": "all_12_milestones",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "architecture_files",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "architecture_decisions",
+      "status": "passed",
+      "detail": "found 10"
+    },
+    {
+      "name": "infrastructure_validation",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "azureml_mappings",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "security_and_governance",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "operational_runbooks",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "dashboard_specifications",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "primary_outputs",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "readme_sections",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "portfolio_and_ci_files",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "no_obvious_secrets",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "reporting_privacy",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "readme_repository_links",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "no_runtime_network_calls",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "no_pbix_required",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "synthetic_disclaimers",
+      "status": "passed",
+      "detail": ""
+    },
+    {
+      "name": "pytest",
+      "status": "passed",
+      "detail": "........................................................................ [ 57%]\n......................................................                   [100%]\n126 passed in 3.23s"
+    },
+    {
+      "name": "ruff",
+      "status": "passed",
+      "detail": "All checks passed!"
+    }
+  ],
+  "infrastructure_validation": {
+    "overall_status": "passed",
+    "checks": [
+      {
+        "name": "expected_files",
+        "status": "passed",
+        "detail": ""
+      },
+      {
+        "name": "required_parameters",
+        "status": "passed",
+        "detail": ""
+      },
+      {
+        "name": "module_references",
+        "status": "passed",
+        "detail": ""
+      },
+      {
+        "name": "file_naming",
+        "status": "passed",
+        "detail": ""
+      },
+      {
+        "name": "no_obvious_secrets",
+        "status": "passed",
+        "detail": ""
+      },
+      {
+        "name": "placeholders_documented",
+        "status": "passed",
+        "detail": ""
+      },
+      {
+        "name": "non_deploying_notice",
+        "status": "passed",
+        "detail": ""
+      }
+    ],
+    "passed_checks": 7,
+    "failed_checks": 0,
+    "deployment_executed": false
+  },
+  "runtime_validation": {
+    "executed": true,
+    "tests_passed": 126,
+    "pytest_status": "passed",
+    "ruff_status": "passed"
+  },
+  "network_calls_made": false,
+  "azure_resources_deployed": false
+}

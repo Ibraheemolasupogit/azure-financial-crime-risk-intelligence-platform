@@ -1,0 +1,37 @@
+name: Security Assurance
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "17 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  local-security-controls:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install declared dependencies
+        run: pip install -r requirements.txt
+
+      - name: Validate infrastructure without deployment
+        run: python scripts/validate_infrastructure.py
+
+      - name: Run final structural audit
+        run: python scripts/run_final_audit.py --skip-runtime-checks
+
+      - name: Document security tool boundary
+        run: |
+          echo "GitHub secret scanning and dependency review should be enabled in repository settings."
+          echo "No Python security linter is invoked because one is not declared in requirements.txt."
+          echo "Add an approved pinned scanner through a reviewed dependency change before enforcing it."

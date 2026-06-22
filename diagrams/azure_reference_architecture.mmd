@@ -1,0 +1,65 @@
+flowchart LR
+  subgraph Sources["Synthetic Sources"]
+    TP["Transaction Producers"]
+    BF["Batch Files"]
+    LOCAL["Local Python Implementation"]
+  end
+
+  subgraph Ingestion["Ingestion and Processing"]
+    EH["Azure Event Hubs"]
+    ASA["Azure Stream Analytics / Functions"]
+    ADLS["Azure Data Lake Storage Gen2"]
+    SYN["Azure Synapse Analytics"]
+  end
+
+  subgraph Intelligence["Financial Crime Intelligence"]
+    AML["AML Rule Engine"]
+    RISK["Customer Risk Scoring"]
+    AMLML["Azure Machine Learning"]
+    REG["Azure ML Model Registry"]
+    EP["Azure ML Managed Online Endpoint"]
+    PRED["Fraud Predictions"]
+    AIF["Azure AI Foundry / Azure OpenAI"]
+  end
+
+  subgraph Consumption["Investigation and Reporting"]
+    CASES["Investigation Workflows"]
+    PBI["Power BI"]
+  end
+
+  subgraph Platform["Security, Governance, and Operations"]
+    ENTRA["Microsoft Entra ID"]
+    MI["Managed Identities"]
+    KV["Azure Key Vault"]
+    VNET["Virtual Network / Private Endpoints"]
+    PUR["Microsoft Purview"]
+    MON["Azure Monitor / Application Insights / Log Analytics"]
+    CICD["GitHub Actions / Azure DevOps"]
+    ACR["Azure Container Registry"]
+  end
+
+  TP -->|streaming path| EH --> ASA --> ADLS
+  BF -->|batch path| ADLS
+  LOCAL -. "deployment equivalent" .-> ADLS
+  ADLS --> SYN
+  SYN -->|feature preparation| AMLML --> REG --> EP --> PRED
+  ACR --> AMLML
+  PRED --> AML --> RISK --> AIF --> CASES
+  SYN --> AML
+  SYN --> RISK
+  CASES --> PBI
+  SYN --> PBI
+  CICD --> ACR
+  CICD --> AMLML
+  ENTRA --> MI --> KV
+  VNET --- EH
+  VNET --- ADLS
+  VNET --- SYN
+  VNET --- EP
+  PUR -. "catalogue and lineage" .-> ADLS
+  PUR -.-> SYN
+  PUR -.-> PBI
+  MON -. "telemetry" .-> ASA
+  MON -.-> EP
+  MON -.-> AML
+  MON -.-> AIF

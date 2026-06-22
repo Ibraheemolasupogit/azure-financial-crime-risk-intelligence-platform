@@ -1,0 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+display_name: batch-score-synthetic-transactions
+type: command
+code: ../../
+command: >-
+  python scripts/train_fraud_baseline.py
+environment: azureml:fraud-model-environment@latest
+compute: azureml:<BATCH_COMPUTE_PLACEHOLDER>
+tags:
+  mapping_note: replace command with an approved inference-only entry point
+  deployment_status: illustrative

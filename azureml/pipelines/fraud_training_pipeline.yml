@@ -1,0 +1,23 @@
+$schema: https://azuremlschemas.azureedge.net/latest/pipelineJob.schema.json
+type: pipeline
+display_name: synthetic-fraud-training-pipeline
+description: Illustrative mapping of local feature, train, and evaluation stages.
+settings:
+  default_compute: azureml:<TRAINING_COMPUTE_PLACEHOLDER>
+jobs:
+  features:
+    component: azureml:build_synthetic_financial_crime_features:1
+    inputs:
+      raw_data: azureml:<RAW_DATA_ASSET_PLACEHOLDER>@latest
+  train:
+    component: azureml:train_synthetic_fraud_model:1
+    inputs:
+      feature_data: ${{parent.jobs.features.outputs.feature_data}}
+  evaluate:
+    component: azureml:evaluate_synthetic_fraud_model:1
+    inputs:
+      model_input: ${{parent.jobs.train.outputs.model_output}}
+      feature_data: ${{parent.jobs.features.outputs.feature_data}}
+tags:
+  registration_note: registration requires a separate approved gate after evaluation
+  deployment_status: illustrative

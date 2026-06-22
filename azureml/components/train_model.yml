@@ -1,0 +1,18 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
+name: train_synthetic_fraud_model
+version: 1
+type: command
+display_name: Train fraud baseline
+inputs:
+  feature_data:
+    type: uri_folder
+outputs:
+  model_output:
+    type: uri_folder
+  metrics_output:
+    type: uri_file
+code: ../../
+environment: azureml:fraud-model-environment@latest
+command: python scripts/train_fraud_baseline.py
+tags:
+  deployment_status: illustrative

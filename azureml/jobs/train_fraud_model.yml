@@ -1,0 +1,12 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+display_name: train-synthetic-fraud-baseline
+type: command
+code: ../../
+command: >-
+  python scripts/train_fraud_baseline.py
+environment: azureml:fraud-model-environment@latest
+compute: azureml:<TRAINING_COMPUTE_PLACEHOLDER>
+experiment_name: synthetic-fraud-baseline
+tags:
+  data_classification: synthetic-only
+  deployment_status: illustrative

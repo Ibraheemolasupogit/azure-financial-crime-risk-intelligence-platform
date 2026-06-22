@@ -1,0 +1,12 @@
+name: fraud-model-local-mapping
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - pandas
+      - numpy
+      - scikit-learn
+      - pyyaml
+# Reference environment only; pin versions and approve the base image before production use.

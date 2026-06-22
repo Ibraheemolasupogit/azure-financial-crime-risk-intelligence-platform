@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "event_id": "EVT-SYNTHETIC-000001",
+  "event_type": "synthetic.transaction.created",
+  "occurred_at": "2025-06-15T10:30:00Z",
+  "transaction": {
+    "transaction_id": "TXN-000000001",
+    "account_id": "ACC-000001",
+    "customer_id": "CUST-000001",
+    "amount": 125.75,
+    "currency": "GBP",
+    "channel": "mobile",
+    "merchant_country": "GB",
+    "device_id": "DEV-SYNTHETIC-001"
+  }
+}

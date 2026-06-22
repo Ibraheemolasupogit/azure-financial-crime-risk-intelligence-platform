@@ -1,0 +1,101 @@
+{
+  "completion_timestamp": "2026-06-22T23:15:59.002787+00:00",
+  "milestones_completed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "modules_implemented": [
+    "synthetic_data",
+    "ingestion_validation",
+    "feature_engineering",
+    "fraud_model",
+    "aml_rules",
+    "customer_risk",
+    "explainability",
+    "genai_investigations",
+    "monitoring",
+    "powerbi_reporting",
+    "azure_architecture",
+    "portfolio_assurance"
+  ],
+  "tests_passed": 126,
+  "primary_outputs": [
+    "outputs",
+    "reports",
+    "dashboard/powerbi_data"
+  ],
+  "architecture_artefacts": [
+    "diagrams/azure_reference_architecture.md",
+    "diagrams/azure_reference_architecture.mmd",
+    "docs/architecture_decisions/ADR-001-local-first-development.md",
+    "docs/architecture_decisions/ADR-002-event-hubs-for-stream-ingestion.md",
+    "docs/architecture_decisions/ADR-003-adls-gen2-for-data-lake.md",
+    "docs/architecture_decisions/ADR-004-synapse-for-analytics.md",
+    "docs/architecture_decisions/ADR-005-azure-ml-for-model-lifecycle.md",
+    "docs/architecture_decisions/ADR-006-rule-engine-and-ml-hybrid.md",
+    "docs/architecture_decisions/ADR-007-azure-ai-foundry-for-investigations.md",
+    "docs/architecture_decisions/ADR-008-power-bi-semantic-model.md",
+    "docs/architecture_decisions/ADR-009-purview-for-governance.md",
+    "docs/architecture_decisions/ADR-010-private-networking-and-managed-identity.md"
+  ],
+  "infrastructure_artefacts": [
+    "infra/main.bicep",
+    "infra/main.parameters.example.json",
+    "infra/README.md",
+    "infra/modules/resource-group-scope.bicep",
+    "infra/modules/storage.bicep",
+    "infra/modules/event-hubs.bicep",
+    "infra/modules/key-vault.bicep",
+    "infra/modules/log-analytics.bicep",
+    "infra/modules/application-insights.bicep",
+    "infra/modules/machine-learning.bicep",
+    "infra/modules/container-registry.bicep",
+    "infra/modules/synapse.bicep",
+    "infra/modules/purview-placeholder.bicep",
+    "infra/modules/networking.bicep",
+    "infra/modules/monitoring.bicep"
+  ],
+  "documentation_count": 52,
+  "ci_workflows": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/security.yml"
+  ],
+  "security_controls": [
+    "least_privilege",
+    "managed_identity",
+    "private_endpoints",
+    "key_vault",
+    "audit_logging",
+    "threat_model"
+  ],
+  "known_limitations": [
+    "synthetic data only",
+    "weak fraud baseline performance",
+    "high AML false-positive volume",
+    "deterministic GenAI mode",
+    "no live Azure deployment",
+    "no deployed Power BI model",
+    "illustrative infrastructure templates"
+  ],
+  "future_deployment_steps": [
+    "subscription-specific architecture and threat review",
+    "Bicep compiler and policy validation",
+    "private synthetic-data development deployment",
+    "load, resilience, security, and model-risk validation",
+    "approved environment promotion"
+  ],
+  "overall_project_status": "passed",
+  "synthetic_data_statement": "All project data is synthetic; no real customer or banking data is used.",
+  "azure_resources_deployed": false,
+  "network_calls_made": false
+}

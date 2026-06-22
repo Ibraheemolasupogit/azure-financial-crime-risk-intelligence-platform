@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:synthetic-financial-crime:transaction-event:1",
+  "title": "Synthetic Transaction Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "event_id", "event_type", "occurred_at", "transaction"],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "event_id": { "type": "string", "pattern": "^EVT-[A-Z0-9-]+$" },
+    "event_type": { "const": "synthetic.transaction.created" },
+    "occurred_at": { "type": "string", "format": "date-time" },
+    "transaction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transaction_id", "account_id", "customer_id", "amount", "currency", "channel"],
+      "properties": {
+        "transaction_id": { "type": "string" },
+        "account_id": { "type": "string" },
+        "customer_id": { "type": "string" },
+        "amount": { "type": "number", "exclusiveMinimum": 0 },
+        "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+        "channel": { "type": "string" },
+        "merchant_country": { "type": "string" },
+        "device_id": { "type": "string" }
+      }
+    }
+  }
+}

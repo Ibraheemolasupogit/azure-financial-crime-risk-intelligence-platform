@@ -1,0 +1,17 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
+name: build_synthetic_financial_crime_features
+version: 1
+type: command
+display_name: Build validated feature tables
+inputs:
+  raw_data:
+    type: uri_folder
+outputs:
+  feature_data:
+    type: uri_folder
+code: ../../
+environment: azureml:fraud-model-environment@latest
+command: python scripts/build_features.py
+tags:
+  local_mapping: scripts/build_features.py
+  deployment_status: illustrative

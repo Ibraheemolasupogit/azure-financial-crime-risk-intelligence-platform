@@ -1,0 +1,19 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
+name: evaluate_synthetic_fraud_model
+version: 1
+type: command
+display_name: Evaluate and explain fraud model
+inputs:
+  model_input:
+    type: uri_folder
+  feature_data:
+    type: uri_folder
+outputs:
+  evaluation_output:
+    type: uri_folder
+code: ../../
+environment: azureml:fraud-model-environment@latest
+command: python scripts/explain_fraud_model.py
+tags:
+  approval_gate: metrics-explainability-fairness-human-review
+  deployment_status: illustrative

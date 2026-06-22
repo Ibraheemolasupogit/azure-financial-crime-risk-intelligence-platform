@@ -65,3 +65,9 @@ Milestone 10 adds deterministic baseline-versus-current monitoring for data qual
 Milestone 11 converts validated upstream artifacts into a governed star-style reporting layer with deterministic surrogate keys, privacy-minimised dimensions, analysis-ready facts, and reconciled executive aggregates. The generated CSV model supports fraud, AML, customer risk, investigation, model explanation, and platform-health reporting without requiring Power BI Desktop or cloud services.
 
 The reporting dictionary, semantic model specification, KPI definitions, DAX measure library, dashboard design, and automated quality checks make the layer reviewable by analytics engineers, model-risk teams, investigators, and executive stakeholders before any future Azure or Power BI deployment.
+
+## Azure Architecture And Portfolio Assurance
+
+Milestone 12 completes the portfolio with a Mermaid Azure reference architecture, ten architecture decisions, modular illustrative Bicep, Azure ML and streaming mappings, security and threat models, data lineage, MLOps and release controls, operational runbooks, cost and scalability analysis, non-functional targets, and role-focused portfolio guides.
+
+Static infrastructure validation and a final quality audit verify that all 12 milestones are represented without deploying Azure resources, making network calls, adding credentials, or weakening the synthetic-data boundary. The architecture remains a reference design requiring institution-specific policy, subscription, security, legal, regulatory, and model-risk approval.
