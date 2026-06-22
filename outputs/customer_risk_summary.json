@@ -1,0 +1,74 @@
+{
+  "run_timestamp": "2026-06-22T20:11:44+00:00",
+  "score_version": "1.0.0",
+  "customers_scored": 50,
+  "average_total_risk_score": 47.9562,
+  "median_total_risk_score": 45.8022,
+  "minimum_total_risk_score": 21.7171,
+  "maximum_total_risk_score": 78.1571,
+  "customers_by_risk_band": {
+    "moderate": 32,
+    "high": 14,
+    "low": 3,
+    "critical": 1
+  },
+  "customers_by_review_priority": {
+    "standard": 29,
+    "enhanced": 19,
+    "urgent": 1,
+    "routine": 1
+  },
+  "average_component_scores": {
+    "aml_alert": 49.3124,
+    "device_session": 56.0333,
+    "fraud_model": 55.4918,
+    "kyc": 10.6,
+    "transaction_behaviour": 71.5686
+  },
+  "highest_risk_customers": [
+    {
+      "customer_id": "CUST-000018",
+      "total_risk_score": 78.1571,
+      "risk_band": "critical",
+      "primary_risk_reason": "43 high/critical AML alerts; 3 structuring alerts; 148 total AML alerts"
+    },
+    {
+      "customer_id": "CUST-000049",
+      "total_risk_score": 70.265,
+      "risk_band": "high",
+      "primary_risk_reason": "23 high/critical AML alerts; 19 structuring alerts; 132 total AML alerts"
+    },
+    {
+      "customer_id": "CUST-000010",
+      "total_risk_score": 69.8056,
+      "risk_band": "high",
+      "primary_risk_reason": "30 high/critical AML alerts; 27 structuring alerts; 156 total AML alerts"
+    },
+    {
+      "customer_id": "CUST-000034",
+      "total_risk_score": 68.3014,
+      "risk_band": "high",
+      "primary_risk_reason": "24 high/critical AML alerts; 21 structuring alerts; 144 total AML alerts"
+    },
+    {
+      "customer_id": "CUST-000042",
+      "total_risk_score": 67.9438,
+      "risk_band": "high",
+      "primary_risk_reason": "45 high/critical AML alerts; 3 structuring alerts; 137 total AML alerts"
+    }
+  ],
+  "dominant_risk_component": "transaction_behaviour",
+  "missing_data_statistics": {
+    "fraud_scored_transaction_count": 1,
+    "maximum_fraud_probability": 1,
+    "average_fraud_probability": 1,
+    "predicted_fraud_transaction_count": 1,
+    "high_probability_transaction_count": 1,
+    "predicted_fraud_transaction_ratio": 1,
+    "high_probability_transaction_ratio": 1
+  },
+  "configuration_validation_status": "passed",
+  "weights_reconstruct_total": true,
+  "overall_run_status": "passed",
+  "synthetic_data_statement": "All customer indicators and scores are synthetic."
+}

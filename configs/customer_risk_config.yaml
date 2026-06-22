@@ -1,0 +1,78 @@
+customer_features_path: data/processed/customer_features.csv
+transaction_features_path: data/processed/transaction_features.csv
+customer_profiles_path: data/raw/customers.csv
+device_sessions_path: data/raw/device_sessions.jsonl
+fraud_predictions_path: outputs/fraud_test_predictions.csv
+aml_customer_summary_path: outputs/aml_customer_summary.csv
+fraud_labels_path: data/raw/fraud_labels.csv
+risk_scores_output_path: outputs/customer_risk_scores.csv
+components_output_path: outputs/customer_risk_components.csv
+summary_output_path: outputs/customer_risk_summary.json
+retrospective_output_path: outputs/customer_risk_retrospective_evaluation.json
+report_output_path: reports/customer_risk_scoring_report.md
+reference_timestamp: "2026-01-01T00:00:00"
+score_version: "1.0.0"
+component_weights:
+  kyc: 0.20
+  transaction_behaviour: 0.20
+  aml_alert: 0.30
+  fraud_model: 0.15
+  device_session: 0.15
+component_caps:
+  kyc: 300.0
+  transaction_behaviour: 100.0
+  aml_alert: 5000.0
+  fraud_model: 100.0
+  device_session: 100.0
+risk_band_thresholds:
+  moderate: 30.0
+  high: 55.0
+  critical: 75.0
+review_priority_thresholds:
+  standard: 25.0
+  enhanced: 50.0
+  urgent: 75.0
+fraud_probability_threshold: 0.05
+high_fraud_probability_threshold: 0.70
+aml_severity_points:
+  low: 5
+  medium: 15
+  high: 30
+  critical: 50
+kyc_mappings:
+  Verified: 0
+  Pending Review: 40
+  Enhanced Due Diligence: 70
+customer_risk_rating_mappings:
+  Low: 0
+  Medium: 30
+  High: 70
+sanctions_mappings:
+  Clear: 0
+  Potential Match: 60
+  Escalated: 100
+pep_points: 50
+watchlist_points: 60
+onboarding_recency_thresholds:
+  very_recent_days: 365
+  recent_days: 730
+  very_recent_points: 30
+  recent_points: 15
+transaction_behaviour_thresholds:
+  transaction_count: 40
+  total_transaction_amount: 5000.0
+  maximum_transaction_amount: 500.0
+  cross_border_ratio: 0.80
+  failed_transaction_ratio: 0.10
+  night_transaction_ratio: 0.30
+  unique_merchant_country_count: 10
+  new_device_transaction_count: 4
+  transaction_velocity_score: 2.0
+device_risk_thresholds:
+  risky_session_count: 3
+  new_device_transaction_count: 4
+  failed_authentication_count: 1
+  geography_mismatch_count: 5
+  elevated_session_count: 1
+missing_value_handling_policy: zero_for_missing_derived_indicators
+top_reason_count: 3

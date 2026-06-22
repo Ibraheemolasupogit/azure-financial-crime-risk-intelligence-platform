@@ -165,6 +165,22 @@ Outputs include transaction-level alerts, a customer exposure summary, rule cove
 
 Rule monitoring is vulnerable to false positives and requires contextual investigation and threshold tuning. The geography list is synthetic and illustrative and does not classify any country as inherently criminal. Conceptually, the engine maps transaction ingestion to Event Hubs, streaming evaluation to Stream Analytics or Functions, evidence to Data Lake Storage, historical analysis to Synapse, governance to Purview, telemetry to Azure Monitor, and dashboards to Power BI. No Azure services are connected.
 
+## Customer Risk Scoring
+
+Milestone 7 adds a deterministic customer financial-crime risk score for investigation prioritisation. Five independently auditable 0–100 components cover customer and KYC indicators, transaction behaviour, AML alert exposure, fraud-model outputs, and device/session activity.
+
+The total is a transparent weighted sum: 20% KYC, 20% transaction behaviour, 30% AML alerts, 15% fraud model, and 15% device/session risk. Configuration validation requires weights to sum to 1.0, ordered band thresholds, valid mappings, and positive component caps. Detailed component rows reconstruct every total score.
+
+Run locally:
+
+```bash
+python3 scripts/score_customer_risk.py
+```
+
+Outputs include customer scores, component-level evidence, a portfolio summary, a Markdown report, and a strictly separate retrospective comparison with synthetic labels. Actual fraud labels are rejected by the scoring path and never influence component or total scores.
+
+Risk bands and review priorities are analytical triage aids requiring human review. They do not prove criminal activity or independently justify adverse, legal, sanctions, reporting, or regulatory action. Conceptually, the workflow maps storage to Data Lake Storage, aggregation to Synapse, future learned models to Azure Machine Learning, orchestration to Functions, governance to Purview, telemetry to Azure Monitor, reporting to Power BI, and deployed secrets to Key Vault.
+
 ## Planned ML Use Cases
 
 - Transaction fraud classification
@@ -246,6 +262,7 @@ python3 scripts/run_data_validation.py
 python3 scripts/build_features.py
 python3 scripts/train_fraud_baseline.py
 python3 scripts/run_aml_rules.py
+python3 scripts/score_customer_risk.py
 python3 -m pytest
 python3 -m ruff check .
 ./scripts/run_all_local.sh

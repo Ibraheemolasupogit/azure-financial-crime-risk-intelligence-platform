@@ -37,6 +37,9 @@ jobs:
       - name: Run AML rule engine
         run: python scripts/run_aml_rules.py
 
+      - name: Score customer risk
+        run: python scripts/score_customer_risk.py
+
       - name: Run ruff
         run: ruff check .
 

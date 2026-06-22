@@ -37,3 +37,9 @@ The baseline explicitly excludes identifiers, raw timestamps, transaction outcom
 Milestone 6 adds ten configurable transaction-monitoring controls with prior-only rolling logic, deterministic alert identifiers, traceable risk points, structured evidence, and customer-level exposure summaries. The engine complements supervised fraud prediction by identifying explainable scenarios that require contextual investigation.
 
 Alerts and customer priorities are triage artifacts only. They do not prove criminal activity, automate legal conclusions, create regulatory submissions, or implement the later composite customer risk-scoring milestone.
+
+## Customer Risk Scoring
+
+Milestone 7 combines five bounded and independently auditable components into a weighted 0–100 customer score. The component audit records raw indicators, thresholds, caps, reasons, configured weights, and contributions so every total can be reconstructed.
+
+Actual fraud labels are prohibited from scoring and used only in a separate retrospective synthetic evaluation. Risk bands and review priorities require contextual human review and must not independently trigger adverse or legal decisions.

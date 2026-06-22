@@ -1,0 +1,18 @@
+{
+  "evaluation_type": "retrospective_only",
+  "labels_used_in_scoring": false,
+  "customers_with_historical_synthetic_fraud": 35,
+  "fraud_prevalence_by_risk_band": {
+    "critical": 1.0,
+    "high": 0.9286,
+    "low": 0.0,
+    "moderate": 0.6562
+  },
+  "high_or_critical_recall_for_historical_fraud_customers": 0.4,
+  "non_fraud_customer_risk_band_distribution": {
+    "moderate": 11,
+    "low": 3,
+    "high": 1
+  },
+  "limitation": "Synthetic labels contain weak behavioural signal; this is not robust validation."
+}
