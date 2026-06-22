@@ -13,3 +13,9 @@ Milestone 2 adds a deterministic synthetic data model built around fictional cus
 Customers can hold one or more accounts. Accounts generate transactions. Device sessions represent digital banking activity and are linked to customers, devices, and transaction events. Fraud labels reference transaction IDs for future supervised ML baselines. AML watchlist alerts reference customer IDs for future monitoring, investigation, and reporting workflows.
 
 All entities are synthetic and locally generated. No real banking, customer, card, account, device, or personal data is used.
+
+## Ingestion And Validation
+
+Milestone 3 adds local pandas-based ingestion and validation for the six synthetic datasets. The validation layer checks schemas, key fields, primary keys, relationships, timestamps, transaction amounts, and categorical domains before later feature engineering and ML workflows consume the data.
+
+Validation outputs are written to `reports/data_validation_report.md` and `outputs/data_validation_results.json`. These local artifacts provide a portfolio-friendly simulation of data quality gates that would usually sit between raw landing zones and downstream analytics platforms in a regulated financial crime environment.

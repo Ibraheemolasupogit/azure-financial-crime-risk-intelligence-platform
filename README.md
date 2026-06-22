@@ -93,6 +93,27 @@ Generated outputs are written to `data/raw/`. Small representative samples are s
 
 These datasets support later milestones by providing linked entities for fraud detection, AML rules, customer risk scoring, explainability, monitoring, reporting, and Power BI-ready outputs. The data model also gives future Azure-aligned architecture work concrete local artifacts to map conceptually to Event Hubs, Data Lake Storage, Synapse Analytics, Azure Machine Learning, Power BI, and Microsoft Purview.
 
+## Ingestion and Validation
+
+Milestone 3 adds a local ingestion and validation layer for the six synthetic banking datasets. The ingestion module reads CSV and JSONL files from `data/raw/` into pandas DataFrames with dataset-specific loader functions and clear missing-file errors.
+
+The validation layer checks required columns, null values in key fields, duplicate primary keys, foreign-key relationships, positive transaction amounts, timestamp parseability, and important categorical value domains.
+
+Validation matters in regulated financial crime systems because downstream fraud models, AML rules, customer risk scores, explainability outputs, analyst workflows, and executive dashboards are only credible when the underlying data is complete, traceable, and relationship-safe.
+
+Run validation locally after generating data:
+
+```bash
+python3 scripts/run_data_validation.py
+```
+
+Validation produces:
+
+- `reports/data_validation_report.md` for human-readable review
+- `outputs/data_validation_results.json` for future dashboard, monitoring, and reporting milestones
+
+Conceptually, this layer maps local raw files to Azure Data Lake Storage zones, transaction-like JSONL records to Azure Event Hubs payloads, validation logic to Azure Stream Analytics or Azure Functions patterns, curated validation outputs to Synapse Analytics and Azure ML readiness checks, data quality evidence to Microsoft Purview, and report artifacts to Power BI workflows. No Azure credentials are required.
+
 ## Planned ML Use Cases
 
 - Transaction fraud classification
@@ -169,9 +190,10 @@ This project currently requires no Azure credentials and no paid services.
 python3.11 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python scripts/generate_synthetic_data.py
-pytest
-ruff check .
+python3 scripts/generate_synthetic_data.py
+python3 scripts/run_data_validation.py
+python3 -m pytest
+python3 -m ruff check .
 ./scripts/run_all_local.sh
 ```
 

@@ -25,6 +25,9 @@ jobs:
       - name: Generate synthetic data
         run: python scripts/generate_synthetic_data.py
 
+      - name: Run data validation
+        run: python scripts/run_data_validation.py
+
       - name: Run ruff
         run: ruff check .
 

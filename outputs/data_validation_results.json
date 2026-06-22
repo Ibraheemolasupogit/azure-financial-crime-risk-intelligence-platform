@@ -1,0 +1,804 @@
+{
+  "validation_run_timestamp": "2026-06-18T16:25:45+00:00",
+  "datasets_checked": [
+    "accounts",
+    "aml_watchlist",
+    "customers",
+    "device_sessions",
+    "fraud_labels",
+    "transactions"
+  ],
+  "row_counts": {
+    "customers": 50,
+    "accounts": 101,
+    "transactions": 1468,
+    "device_sessions": 200,
+    "fraud_labels": 1468,
+    "aml_watchlist": 4
+  },
+  "overall_status": "passed",
+  "passed_checks": [
+    {
+      "name": "required_columns",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "date_of_birth_timestamp_parseable",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in date_of_birth are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "onboarding_date_timestamp_parseable",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in onboarding_date are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "kyc_status_allowed_values",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in kyc_status are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "sanctions_screening_status_allowed_values",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in sanctions_screening_status are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "customer_risk_rating_allowed_values",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in customer_risk_rating are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "required_columns",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "account_open_date_timestamp_parseable",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in account_open_date are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "account_type_allowed_values",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in account_type are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "account_status_allowed_values",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in account_status are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "required_columns",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "transaction_timestamp_timestamp_parseable",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in transaction_timestamp are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "transaction_status_allowed_values",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in transaction_status are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "transaction_type_allowed_values",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in transaction_type are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "required_columns",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "session_timestamp_timestamp_parseable",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in session_timestamp are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "device_type_allowed_values",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in device_type are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "session_risk_signal_allowed_values",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in session_risk_signal are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "required_columns",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "fraud_label_allowed_values",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in fraud_label are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "fraud_typology_allowed_values",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in fraud_typology are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "required_columns",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "created_date_timestamp_parseable",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in created_date are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "alert_severity_allowed_values",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in alert_severity are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "review_status_allowed_values",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in review_status are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "accounts.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "account_id_references_accounts",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "transactions.account_id values all exist in accounts.account_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "transactions.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "session_id_references_device_sessions",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "transactions.session_id values all exist in device_sessions.session_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "device_sessions.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "transaction_id_references_transactions",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "fraud_labels.transaction_id values all exist in transactions.transaction_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "aml_watchlist.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "transaction_amount_positive",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All transaction amounts are numeric and positive.",
+      "category": "validity"
+    }
+  ],
+  "failed_checks": [],
+  "warnings": [],
+  "relationship_checks": [
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "accounts.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "account_id_references_accounts",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "transactions.account_id values all exist in accounts.account_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "transactions.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "session_id_references_device_sessions",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "transactions.session_id values all exist in device_sessions.session_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "device_sessions.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "transaction_id_references_transactions",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "fraud_labels.transaction_id values all exist in transactions.transaction_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "aml_watchlist.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    }
+  ],
+  "checks": [
+    {
+      "name": "required_columns",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "date_of_birth_timestamp_parseable",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in date_of_birth are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "onboarding_date_timestamp_parseable",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in onboarding_date are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "kyc_status_allowed_values",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in kyc_status are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "sanctions_screening_status_allowed_values",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in sanctions_screening_status are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "customer_risk_rating_allowed_values",
+      "dataset": "customers",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in customer_risk_rating are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "required_columns",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "account_open_date_timestamp_parseable",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in account_open_date are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "account_type_allowed_values",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in account_type are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "account_status_allowed_values",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in account_status are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "required_columns",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "transaction_timestamp_timestamp_parseable",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in transaction_timestamp are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "transaction_status_allowed_values",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in transaction_status are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "transaction_type_allowed_values",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in transaction_type are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "required_columns",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "session_timestamp_timestamp_parseable",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in session_timestamp are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "device_type_allowed_values",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in device_type are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "session_risk_signal_allowed_values",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in session_risk_signal are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "required_columns",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "fraud_label_allowed_values",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in fraud_label are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "fraud_typology_allowed_values",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in fraud_typology are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "required_columns",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All required columns are present.",
+      "category": "schema"
+    },
+    {
+      "name": "key_field_nulls",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "No null values found in key fields.",
+      "category": "completeness"
+    },
+    {
+      "name": "duplicate_primary_key",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "Primary key values are unique.",
+      "category": "uniqueness"
+    },
+    {
+      "name": "created_date_timestamp_parseable",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in created_date are parseable.",
+      "category": "validity"
+    },
+    {
+      "name": "alert_severity_allowed_values",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in alert_severity are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "review_status_allowed_values",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All values in review_status are within the expected domain.",
+      "category": "validity"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "accounts",
+      "status": "passed",
+      "severity": "critical",
+      "message": "accounts.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "account_id_references_accounts",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "transactions.account_id values all exist in accounts.account_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "transactions.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "session_id_references_device_sessions",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "transactions.session_id values all exist in device_sessions.session_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "device_sessions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "device_sessions.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "transaction_id_references_transactions",
+      "dataset": "fraud_labels",
+      "status": "passed",
+      "severity": "critical",
+      "message": "fraud_labels.transaction_id values all exist in transactions.transaction_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "customer_id_references_customers",
+      "dataset": "aml_watchlist",
+      "status": "passed",
+      "severity": "critical",
+      "message": "aml_watchlist.customer_id values all exist in customers.customer_id.",
+      "category": "relationship"
+    },
+    {
+      "name": "transaction_amount_positive",
+      "dataset": "transactions",
+      "status": "passed",
+      "severity": "critical",
+      "message": "All transaction amounts are numeric and positive.",
+      "category": "validity"
+    }
+  ]
+}
