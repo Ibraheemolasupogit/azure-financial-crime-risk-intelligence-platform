@@ -1,0 +1,21 @@
+input_dir: data/raw
+output_dir: data/processed
+reference_timestamp: "2026-01-01T00:00:00"
+velocity_window_hours: 24
+behaviour_window_days: 7
+night_start_hour: 22
+night_end_hour: 6
+rapid_transaction_minutes: 10
+high_value_transaction_threshold: 1000.0
+high_risk_channels:
+  - ATM
+  - Online Banking
+high_risk_merchant_categories:
+  - Crypto Exchange
+  - Money Transfer
+  - Cash Services
+high_risk_countries:
+  - BR
+  - TR
+  - ZA
+include_label_columns: true

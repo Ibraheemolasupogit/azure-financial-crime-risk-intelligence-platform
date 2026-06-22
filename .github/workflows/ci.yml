@@ -28,6 +28,9 @@ jobs:
       - name: Run data validation
         run: python scripts/run_data_validation.py
 
+      - name: Build feature tables
+        run: python scripts/build_features.py
+
       - name: Run ruff
         run: ruff check .
 

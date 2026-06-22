@@ -1,6 +1,6 @@
 # Data Validation Report
 
-- Validation run timestamp: `2026-06-18T16:25:45+00:00`
+- Validation run timestamp: `2026-06-22T19:20:40+00:00`
 - Overall validation status: `passed`
 - Datasets checked: accounts, aml_watchlist, customers, device_sessions, fraud_labels, transactions
 

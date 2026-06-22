@@ -1,0 +1,52 @@
+{
+  "run_timestamp": "2026-06-22T19:20:41+00:00",
+  "input_row_counts": {
+    "customers": 50,
+    "accounts": 101,
+    "transactions": 1468,
+    "device_sessions": 200,
+    "fraud_labels": 1468,
+    "aml_watchlist": 4
+  },
+  "output_row_counts": {
+    "transaction_features": 1468,
+    "account_features": 101,
+    "customer_features": 50
+  },
+  "feature_counts": {
+    "transaction_features": 45,
+    "account_features": 16,
+    "customer_features": 26
+  },
+  "missing_value_summary": {
+    "transaction_features": {},
+    "account_features": {},
+    "customer_features": {}
+  },
+  "duplicate_key_summary": {
+    "transaction_features.transaction_id": 0,
+    "account_features.account_id": 0,
+    "customer_features.customer_id": 0
+  },
+  "feature_categories": {
+    "AML": 1,
+    "KYC": 6,
+    "account": 12,
+    "behavioural": 14,
+    "device": 9,
+    "geographic": 11,
+    "label": 6,
+    "monetary": 13,
+    "temporal": 8,
+    "velocity": 7
+  },
+  "label_separation_statement": "Fraud labels are joined after predictive transaction features are computed and are excluded from the predictive transaction column list.",
+  "leakage_controls": [
+    "Transaction windows are chronological and exclude the current transaction.",
+    "Prior entity averages exclude the current transaction.",
+    "Device novelty is based only on devices seen earlier in transaction order.",
+    "Fraud outcome fields are explicitly classified as label features.",
+    "Customer historical fraud fields are outcome features for retrospective risk analysis, not transaction prediction."
+  ],
+  "overall_status": "passed"
+}

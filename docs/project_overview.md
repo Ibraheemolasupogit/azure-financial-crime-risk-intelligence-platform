@@ -19,3 +19,9 @@ All entities are synthetic and locally generated. No real banking, customer, car
 Milestone 3 adds local pandas-based ingestion and validation for the six synthetic datasets. The validation layer checks schemas, key fields, primary keys, relationships, timestamps, transaction amounts, and categorical domains before later feature engineering and ML workflows consume the data.
 
 Validation outputs are written to `reports/data_validation_report.md` and `outputs/data_validation_results.json`. These local artifacts provide a portfolio-friendly simulation of data quality gates that would usually sit between raw landing zones and downstream analytics platforms in a regulated financial crime environment.
+
+## Feature Engineering
+
+Milestone 4 builds transaction, account, and customer feature tables from validated synthetic data. Transaction features use chronological prior-only windows for velocity, amount baselines, geographic behaviour, and device novelty. Account and customer tables provide deterministic descriptive aggregates, KYC and AML signals, and separately identified historical outcomes.
+
+The feature dictionary and quality report make feature purpose, source, leakage risk, missing values, duplicate keys, and label separation reviewable before any model training begins.

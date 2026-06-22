@@ -114,6 +114,25 @@ Validation produces:
 
 Conceptually, this layer maps local raw files to Azure Data Lake Storage zones, transaction-like JSONL records to Azure Event Hubs payloads, validation logic to Azure Stream Analytics or Azure Functions patterns, curated validation outputs to Synapse Analytics and Azure ML readiness checks, data quality evidence to Microsoft Purview, and report artifacts to Power BI workflows. No Azure credentials are required.
 
+## Feature Engineering
+
+Milestone 4 converts validated synthetic inputs into three model-ready analytical tables:
+
+- `data/processed/transaction_features.csv` contains temporal, monetary, prior-only velocity, behavioural, geographic, merchant, channel, device, and session-risk signals.
+- `data/processed/account_features.csv` contains account activity, value, failure, cross-border, device, lifecycle, status, and type features.
+- `data/processed/customer_features.csv` contains customer behaviour, tenure, account footprint, KYC, sanctions, AML watchlist, and clearly identified historical outcome features.
+- `data/processed/feature_dictionary.csv` documents every output column, its category, source, intended use, and leakage risk.
+
+Run the local feature pipeline after data generation and validation:
+
+```bash
+python3 scripts/build_features.py
+```
+
+The CLI validates all six input datasets before processing and writes quality evidence to `reports/feature_engineering_report.md` and `outputs/feature_engineering_summary.json`.
+
+Leakage controls are deliberate: transaction windows and amount baselines use prior activity only, device novelty is calculated chronologically, and fraud labels are joined only after predictive features are complete. Label columns are excluded from the predictive feature list and classified separately in the feature dictionary. These outputs prepare later fraud modelling, AML monitoring, customer risk scoring, explainability, monitoring, and Power BI milestones without training a model in this milestone.
+
 ## Planned ML Use Cases
 
 - Transaction fraud classification
@@ -192,6 +211,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 python3 scripts/generate_synthetic_data.py
 python3 scripts/run_data_validation.py
+python3 scripts/build_features.py
 python3 -m pytest
 python3 -m ruff check .
 ./scripts/run_all_local.sh
