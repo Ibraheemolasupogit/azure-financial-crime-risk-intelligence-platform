@@ -1,0 +1,76 @@
+transaction_features_path: data/processed/transaction_features.csv
+predictions_path: outputs/fraud_test_predictions.csv
+aml_alerts_path: outputs/aml_transaction_alerts.csv
+aml_rule_summary_path: outputs/aml_rule_summary.csv
+customer_risk_scores_path: outputs/customer_risk_scores.csv
+customer_risk_components_path: outputs/customer_risk_components.csv
+customer_risk_summary_path: outputs/customer_risk_summary.json
+explanation_quality_path: outputs/fraud_explanation_quality.json
+explainability_summary_path: outputs/fraud_explainability_summary.json
+genai_quality_path: outputs/genai_grounding_quality.json
+prompt_payloads_path: outputs/genai_prompt_payloads.jsonl
+model_metadata_path: models/fraud_baseline_metadata.json
+data_quality_output_path: outputs/data_quality_monitoring.csv
+numeric_drift_output_path: outputs/numeric_feature_drift.csv
+categorical_drift_output_path: outputs/categorical_feature_drift.csv
+fraud_monitoring_output_path: outputs/fraud_model_monitoring.csv
+aml_monitoring_output_path: outputs/aml_rule_monitoring.csv
+risk_monitoring_output_path: outputs/customer_risk_monitoring.csv
+explainability_monitoring_output_path: outputs/explainability_monitoring.csv
+genai_monitoring_output_path: outputs/genai_monitoring.csv
+pipeline_health_output_path: outputs/pipeline_health.csv
+alerts_output_path: outputs/platform_monitoring_alerts.csv
+summary_output_path: outputs/platform_monitoring_summary.json
+report_output_path: reports/platform_monitoring_report.md
+reference_timestamp: "2026-06-22T00:00:00Z"
+expected_pipeline_stages:
+  synthetic_data_generation: data/raw/transactions.jsonl
+  ingestion_validation: outputs/data_validation_results.json
+  feature_engineering: outputs/feature_engineering_summary.json
+  fraud_baseline: outputs/fraud_model_metrics.json
+  aml_rules: outputs/aml_run_summary.json
+  customer_risk_scoring: outputs/customer_risk_summary.json
+  model_explainability: outputs/fraud_explanation_quality.json
+  genai_investigation: outputs/genai_grounding_quality.json
+expected_artefacts:
+  - data/processed/transaction_features.csv
+  - models/fraud_baseline_pipeline.joblib
+  - outputs/aml_transaction_alerts.csv
+  - outputs/customer_risk_scores.csv
+  - outputs/fraud_local_explanations.csv
+  - outputs/investigation_case_summaries.csv
+artefact_freshness_threshold_hours: 48
+row_count_change_warning_threshold: 0.25
+row_count_change_critical_threshold: 0.50
+missing_value_warning_threshold: 0.01
+duplicate_key_warning_threshold: 0
+numeric_drift_method: psi
+categorical_drift_method: total_variation_distance
+psi_warning_threshold: 0.10
+psi_critical_threshold: 0.25
+distribution_distance_warning_threshold: 0.10
+distribution_distance_critical_threshold: 0.25
+fraud_probability_drift_warning_threshold: 0.10
+fraud_probability_drift_critical_threshold: 0.25
+performance_degradation_warning_threshold: 0.10
+performance_degradation_critical_threshold: 0.25
+precision_warning_threshold: 0.05
+recall_warning_threshold: 0.50
+average_precision_warning_threshold: 0.05
+false_positive_rate_warning_threshold: 0.50
+aml_alert_rate_warning_threshold: 0.50
+aml_alert_rate_critical_threshold: 1.00
+aml_rule_concentration_threshold: 0.30
+customer_risk_band_shift_threshold: 0.20
+explanation_failure_threshold: 0
+reconstruction_difference_threshold: 1.0e-10
+genai_grounding_failure_threshold: 0
+genai_safety_failure_threshold: 0
+monitoring_severity_mappings:
+  healthy: information
+  warning: medium
+  critical: critical
+  unavailable: high
+top_drift_feature_count: 10
+top_alert_count: 10
+monitoring_version: "1.0.0"

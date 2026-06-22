@@ -1,0 +1,11 @@
+metric_name,observed_value,threshold,status
+cases_generated,5,0,healthy
+grounding_failures,0,0,healthy
+safety_failures,0,0,healthy
+unsupported_numeric_claims,0,0,healthy
+unsupported_transaction_references,0,0,healthy
+unsupported_aml_rule_references,0,0,healthy
+prohibited_claim_violations,0,0,healthy
+disclaimer_violations,0,0,healthy
+word_limit_violations,0,0,healthy
+network_enabled_payloads,0,0,healthy

@@ -1,0 +1,7 @@
+metric_name,observed_value,threshold,status
+average_total_risk_score,47.956214,,healthy
+median_total_risk_score,45.8022,,healthy
+high_critical_concentration,0.3,0.5,healthy
+risk_band_distribution_shift,0.4,0.2,warning
+score_reconstruction_max_difference,1.4210854715202004e-14,0.0001,healthy
+score_version_count,1.0,1.0,healthy

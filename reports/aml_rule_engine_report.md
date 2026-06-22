@@ -1,6 +1,6 @@
 # AML Rule Engine Report
 
-- Run timestamp: `2026-06-22T21:57:08+00:00`
+- Run timestamp: `2026-06-22T22:05:17+00:00`
 - Overall status: `passed`
 - Transactions evaluated: 1468
 - Enabled rules: 10

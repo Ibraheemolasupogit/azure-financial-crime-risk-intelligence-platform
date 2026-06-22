@@ -1,0 +1,8 @@
+metric_name,observed_value,threshold,status
+transactions_explained,367.0,0.0,healthy
+explanation_failures,0.0,0.0,healthy
+maximum_decision_score_difference,5.329070518200751e-15,1e-10,healthy
+maximum_probability_difference,3.3306690738754696e-16,1e-10,healthy
+invalid_reason_code_count,0.0,0.0,healthy
+excluded_feature_violation_count,0.0,0.0,healthy
+missing_feature_count,0.0,0.0,healthy

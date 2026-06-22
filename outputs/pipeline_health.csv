@@ -1,0 +1,15 @@
+stage_or_artefact,path,exists,non_empty,parseable,freshness_hours,status
+synthetic_data_generation,data/raw/transactions.jsonl,True,True,True,0,healthy
+ingestion_validation,outputs/data_validation_results.json,True,True,True,0,healthy
+feature_engineering,outputs/feature_engineering_summary.json,True,True,True,0,healthy
+fraud_baseline,outputs/fraud_model_metrics.json,True,True,True,0,healthy
+aml_rules,outputs/aml_run_summary.json,True,True,True,0,healthy
+customer_risk_scoring,outputs/customer_risk_summary.json,True,True,True,0,healthy
+model_explainability,outputs/fraud_explanation_quality.json,True,True,True,0,healthy
+genai_investigation,outputs/genai_grounding_quality.json,True,True,True,0,healthy
+artefact_1,data/processed/transaction_features.csv,True,True,True,0,healthy
+artefact_2,models/fraud_baseline_pipeline.joblib,True,True,True,0,healthy
+artefact_3,outputs/aml_transaction_alerts.csv,True,True,True,0,healthy
+artefact_4,outputs/customer_risk_scores.csv,True,True,True,0,healthy
+artefact_5,outputs/fraud_local_explanations.csv,True,True,True,0,healthy
+artefact_6,outputs/investigation_case_summaries.csv,True,True,True,0,healthy

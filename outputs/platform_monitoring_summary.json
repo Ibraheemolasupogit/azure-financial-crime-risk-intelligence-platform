@@ -1,0 +1,264 @@
+{
+  "run_timestamp": "2026-06-22T22:06:14.374822+00:00",
+  "monitoring_version": "1.0.0",
+  "baseline_period": "2025-01-01T01:11:35 to 2025-07-12T20:34:53",
+  "current_period": "2025-07-13T03:50:59 to 2025-12-31T14:28:09",
+  "domains_monitored": [
+    "data_quality",
+    "numeric_drift",
+    "categorical_drift",
+    "fraud_model",
+    "aml",
+    "customer_risk",
+    "explainability",
+    "genai",
+    "pipeline"
+  ],
+  "healthy_control_count": 84,
+  "warning_count": 8,
+  "critical_count": 0,
+  "unavailable_count": 0,
+  "top_monitoring_alerts": [
+    {
+      "monitoring_alert_id": "MON-AF6C8D56C2971600",
+      "monitoring_domain": "numeric_drift",
+      "control_name": "amount_vs_account_average",
+      "metric_name": "amount_vs_account_average",
+      "observed_value": 0.22898865785326494,
+      "baseline_value": null,
+      "threshold": null,
+      "status": "warning",
+      "severity": "medium",
+      "reason": "Monitoring control amount_vs_account_average is warning.",
+      "recommended_action": "Human review required; investigate evidence and approve any configuration change.",
+      "evidence_json": "{\"baseline_mean\": 1.989964770994699, \"baseline_median\": 0.874619948499491, \"baseline_std\": 8.459458016825767, \"current_mean\": 1.5955493466195103, \"current_median\": 0.5429485009520334, \"current_std\": 4.343088054934453, \"distribution_distance\": 0.22898865785326494, \"drift_status\": \"warning\", \"feature_name\": \"amount_vs_account_average\", \"psi\": 0.22898865785326494, \"relative_mean_change\": 0.19820221449349437, \"status\": \"warning\"}",
+      "generated_timestamp": "2026-06-22T00:00:00Z",
+      "monitoring_version": "1.0.0",
+      "synthetic_data_flag": true
+    },
+    {
+      "monitoring_alert_id": "MON-FA8BEE5D922FAA2B",
+      "monitoring_domain": "fraud_model",
+      "control_name": "average_precision",
+      "metric_name": "average_precision",
+      "observed_value": 0.03973997543015948,
+      "baseline_value": 0.02242445413280381,
+      "threshold": null,
+      "status": "warning",
+      "severity": "medium",
+      "reason": "Monitoring control average_precision is warning.",
+      "recommended_action": "Human review required; investigate evidence and approve any configuration change.",
+      "evidence_json": "{\"absolute_change\": 0.01731552129735567, \"baseline_value\": 0.02242445413280381, \"current_value\": 0.03973997543015948, \"metric_name\": \"average_precision\", \"status\": \"warning\"}",
+      "generated_timestamp": "2026-06-22T00:00:00Z",
+      "monitoring_version": "1.0.0",
+      "synthetic_data_flag": true
+    },
+    {
+      "monitoring_alert_id": "MON-61CADAF209972CD6",
+      "monitoring_domain": "fraud_model",
+      "control_name": "false_positive_rate",
+      "metric_name": "false_positive_rate",
+      "observed_value": 0.888268156424581,
+      "baseline_value": 0.9044943820224719,
+      "threshold": null,
+      "status": "warning",
+      "severity": "medium",
+      "reason": "Monitoring control false_positive_rate is warning.",
+      "recommended_action": "Human review required; investigate evidence and approve any configuration change.",
+      "evidence_json": "{\"absolute_change\": 0.016226225597890886, \"baseline_value\": 0.9044943820224719, \"current_value\": 0.888268156424581, \"metric_name\": \"false_positive_rate\", \"status\": \"warning\"}",
+      "generated_timestamp": "2026-06-22T00:00:00Z",
+      "monitoring_version": "1.0.0",
+      "synthetic_data_flag": true
+    },
+    {
+      "monitoring_alert_id": "MON-2475337BEA2E1A30",
+      "monitoring_domain": "fraud_model",
+      "control_name": "precision",
+      "metric_name": "precision",
+      "observed_value": 0.03048780487804878,
+      "baseline_value": 0.030120481927710843,
+      "threshold": null,
+      "status": "warning",
+      "severity": "medium",
+      "reason": "Monitoring control precision is warning.",
+      "recommended_action": "Human review required; investigate evidence and approve any configuration change.",
+      "evidence_json": "{\"absolute_change\": 0.0003673229503379366, \"baseline_value\": 0.030120481927710843, \"current_value\": 0.03048780487804878, \"metric_name\": \"precision\", \"status\": \"warning\"}",
+      "generated_timestamp": "2026-06-22T00:00:00Z",
+      "monitoring_version": "1.0.0",
+      "synthetic_data_flag": true
+    },
+    {
+      "monitoring_alert_id": "MON-B5831E477467072D",
+      "monitoring_domain": "aml",
+      "control_name": "alerted_transaction_rate",
+      "metric_name": "alerted_transaction_rate",
+      "observed_value": 0.9570844686648501,
+      "baseline_value": null,
+      "threshold": 0.5,
+      "status": "warning",
+      "severity": "medium",
+      "reason": "Monitoring control alerted_transaction_rate is warning.",
+      "recommended_action": "Human review required; investigate evidence and approve any configuration change.",
+      "evidence_json": "{\"metric_name\": \"alerted_transaction_rate\", \"observed_value\": 0.9570844686648501, \"status\": \"warning\", \"threshold\": 0.5}",
+      "generated_timestamp": "2026-06-22T00:00:00Z",
+      "monitoring_version": "1.0.0",
+      "synthetic_data_flag": true
+    },
+    {
+      "monitoring_alert_id": "MON-A2160E1A8D96C205",
+      "monitoring_domain": "aml",
+      "control_name": "alert_to_transaction_ratio",
+      "metric_name": "alert_to_transaction_ratio",
+      "observed_value": 2.417574931880109,
+      "baseline_value": null,
+      "threshold": 0.5,
+      "status": "warning",
+      "severity": "medium",
+      "reason": "Monitoring control alert_to_transaction_ratio is warning.",
+      "recommended_action": "Human review required; investigate evidence and approve any configuration change.",
+      "evidence_json": "{\"metric_name\": \"alert_to_transaction_ratio\", \"observed_value\": 2.417574931880109, \"status\": \"warning\", \"threshold\": 0.5}",
+      "generated_timestamp": "2026-06-22T00:00:00Z",
+      "monitoring_version": "1.0.0",
+      "synthetic_data_flag": true
+    },
+    {
+      "monitoring_alert_id": "MON-38F396941449736E",
+      "monitoring_domain": "aml",
+      "control_name": "affected_customer_rate",
+      "metric_name": "affected_customer_rate",
+      "observed_value": 1.0,
+      "baseline_value": null,
+      "threshold": 0.9,
+      "status": "warning",
+      "severity": "medium",
+      "reason": "Monitoring control affected_customer_rate is warning.",
+      "recommended_action": "Human review required; investigate evidence and approve any configuration change.",
+      "evidence_json": "{\"metric_name\": \"affected_customer_rate\", \"observed_value\": 1.0, \"status\": \"warning\", \"threshold\": 0.9}",
+      "generated_timestamp": "2026-06-22T00:00:00Z",
+      "monitoring_version": "1.0.0",
+      "synthetic_data_flag": true
+    },
+    {
+      "monitoring_alert_id": "MON-4BC348C877F908F4",
+      "monitoring_domain": "customer_risk",
+      "control_name": "risk_band_distribution_shift",
+      "metric_name": "risk_band_distribution_shift",
+      "observed_value": 0.4,
+      "baseline_value": null,
+      "threshold": 0.2,
+      "status": "warning",
+      "severity": "medium",
+      "reason": "Monitoring control risk_band_distribution_shift is warning.",
+      "recommended_action": "Human review required; investigate evidence and approve any configuration change.",
+      "evidence_json": "{\"metric_name\": \"risk_band_distribution_shift\", \"observed_value\": 0.4, \"status\": \"warning\", \"threshold\": 0.2}",
+      "generated_timestamp": "2026-06-22T00:00:00Z",
+      "monitoring_version": "1.0.0",
+      "synthetic_data_flag": true
+    }
+  ],
+  "top_drifted_features": {
+    "numeric": [
+      {
+        "feature_name": "amount_vs_account_average",
+        "psi": 0.22898865785326494,
+        "drift_status": "warning"
+      },
+      {
+        "feature_name": "amount_vs_customer_average",
+        "psi": 0.0858718685562284,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "amount",
+        "psi": 0.023068615250470784,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "log_transaction_amount",
+        "psi": 0.023068615250470784,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "transaction_amount_customer_24h",
+        "psi": 0.005148572842133094,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "transaction_velocity_score",
+        "psi": 0.005148572842133094,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "cross_border_transaction_count_7d",
+        "psi": 0.0036545637728223955,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "transaction_count_customer_24h",
+        "psi": 0.003532423199517529,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "country_mismatch_flag",
+        "psi": 0.0,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "risky_session_flag",
+        "psi": 0.0,
+        "drift_status": "healthy"
+      }
+    ],
+    "categorical": [
+      {
+        "feature_name": "merchant_country",
+        "total_variation_distance": 0.08719346049046323,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "merchant_category",
+        "total_variation_distance": 0.055858310626702996,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "channel",
+        "total_variation_distance": 0.04359673024523161,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "transaction_type",
+        "total_variation_distance": 0.03542234332425069,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "transaction_status",
+        "total_variation_distance": 0.02316076294277932,
+        "drift_status": "healthy"
+      },
+      {
+        "feature_name": "session_risk_signal",
+        "total_variation_distance": 0.013623978201634857,
+        "drift_status": "healthy"
+      }
+    ]
+  },
+  "fraud_model_status": "warning",
+  "AML_control_status": "warning",
+  "risk_scoring_status": "warning",
+  "explainability_status": "healthy",
+  "GenAI_status": "healthy",
+  "pipeline_status": "healthy",
+  "domain_statuses": {
+    "data_quality": "healthy",
+    "numeric_drift": "warning",
+    "categorical_drift": "healthy",
+    "fraud_model": "warning",
+    "aml": "warning",
+    "customer_risk": "warning",
+    "explainability": "healthy",
+    "genai": "healthy",
+    "pipeline": "healthy"
+  },
+  "overall_platform_status": "warning",
+  "synthetic_data_statement": "All monitoring inputs and findings are synthetic."
+}

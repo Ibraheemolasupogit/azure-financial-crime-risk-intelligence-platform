@@ -55,3 +55,7 @@ Explanation quality controls prohibit identifiers and labels, validate numerical
 Milestone 9 uses deterministic templates to turn selected structured evidence into grounded investigation drafts, review notes, training-only SAR-style narratives, disabled Azure OpenAI payloads, and an executive briefing. Conservative checks validate claims, references, disclaimers, and word limits before outputs pass.
 
 No external model is called. Generated text remains synthetic, non-accusatory, and dependent on human verification.
+
+## Monitoring And Drift
+
+Milestone 10 adds deterministic baseline-versus-current monitoring for data quality, feature drift, fraud performance, AML operations, customer risk, explanation integrity, GenAI safety, and pipeline health. Traceable control alerts aggregate to a transparent platform status while all remediation and configuration changes remain human-controlled.

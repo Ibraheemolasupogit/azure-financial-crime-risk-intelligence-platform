@@ -1,0 +1,17 @@
+metric_name,observed_value,threshold,status
+total_alerts,3549.0,,healthy
+alerted_transaction_rate,0.9570844686648501,0.5,warning
+alert_to_transaction_ratio,2.417574931880109,0.5,warning
+affected_customer_rate,1.0,0.9,warning
+dominant_rule_concentration,0.26317272471118625,0.3,healthy
+duplicate_alert_ids,0.0,0.0,healthy
+rule_volume_AML001,28.0,0.0,healthy
+rule_volume_AML002,250.0,0.0,healthy
+rule_volume_AML003,17.0,0.0,healthy
+rule_volume_AML004,474.0,0.0,healthy
+rule_volume_AML005,773.0,0.0,healthy
+rule_volume_AML006,8.0,0.0,healthy
+rule_volume_AML007,12.0,0.0,healthy
+rule_volume_AML008,767.0,0.0,healthy
+rule_volume_AML009,286.0,0.0,healthy
+rule_volume_AML010,934.0,0.0,healthy

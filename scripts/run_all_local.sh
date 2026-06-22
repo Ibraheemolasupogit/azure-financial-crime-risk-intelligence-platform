@@ -2,7 +2,7 @@
 set -euo pipefail
 
 echo "Azure Financial Crime Risk Intelligence Platform"
-echo "Current status: Milestone 9 - GenAI investigation assistant"
+echo "Current status: Milestone 10 - Monitoring and drift reporting"
 echo "Azure credentials required: no"
 echo "Synthetic data only: yes"
 echo
@@ -18,6 +18,7 @@ required_paths=(
   "configs/customer_risk_config.yaml"
   "configs/explainability_config.yaml"
   "configs/genai_investigation_config.yaml"
+  "configs/monitoring_config.yaml"
   "src"
   "src/data_generation/generate_banking_data.py"
   "src/ingestion/load_banking_data.py"
@@ -29,6 +30,7 @@ required_paths=(
   "src/explainability/explain_fraud_model.py"
   "src/genai/investigation_assistant.py"
   "src/genai/prompt_templates.py"
+  "src/monitoring/monitor_platform.py"
   "scripts/generate_synthetic_data.py"
   "scripts/run_data_validation.py"
   "scripts/build_features.py"
@@ -37,6 +39,7 @@ required_paths=(
   "scripts/score_customer_risk.py"
   "scripts/explain_fraud_model.py"
   "scripts/generate_investigation_reports.py"
+  "scripts/run_platform_monitoring.py"
   "docs/project_overview.md"
   "tests/test_repo_structure.py"
   "tests/test_data_generation.py"
@@ -48,6 +51,7 @@ required_paths=(
   "tests/test_customer_risk_scoring.py"
   "tests/test_model_explainability.py"
   "tests/test_genai_investigation_assistant.py"
+  "tests/test_platform_monitoring.py"
 )
 
 for path in "${required_paths[@]}"; do
@@ -83,10 +87,13 @@ echo
 echo "Generating grounded investigation drafts..."
 "${PYTHON_BIN}" scripts/generate_investigation_reports.py
 echo
+echo "Running platform monitoring and drift reporting..."
+"${PYTHON_BIN}" scripts/run_platform_monitoring.py
+echo
 echo "Running tests..."
 "${PYTHON_BIN}" -m pytest
 echo
 echo "Running lint checks..."
 "${PYTHON_BIN}" -m ruff check .
 echo
-echo "Milestone 9 local checks passed."
+echo "Milestone 10 local checks passed."

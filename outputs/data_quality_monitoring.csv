@@ -1,0 +1,7 @@
+dataset,metric_name,baseline_value,current_value,threshold,status,evidence_json
+transaction_features,row_count_change,734,0.0,0.25,healthy,"{""schema_added"": [], ""schema_removed"": []}"
+transaction_features,schema_change_count,0,0.0,0.0,healthy,"{""schema_added"": [], ""schema_removed"": []}"
+transaction_features,maximum_missing_value_rate,0,0.0,0.01,healthy,"{""schema_added"": [], ""schema_removed"": []}"
+transaction_features,duplicate_primary_keys,0,0.0,0.0,healthy,"{""schema_added"": [], ""schema_removed"": []}"
+transaction_features,invalid_timestamps,0,0.0,0.0,healthy,"{""schema_added"": [], ""schema_removed"": []}"
+transaction_features,invalid_monetary_values,0,0.0,0.0,healthy,"{""schema_added"": [], ""schema_removed"": []}"

@@ -46,6 +46,9 @@ jobs:
       - name: Generate investigation reports
         run: python scripts/generate_investigation_reports.py
 
+      - name: Run platform monitoring
+        run: python scripts/run_platform_monitoring.py
+
       - name: Run ruff
         run: ruff check .
 

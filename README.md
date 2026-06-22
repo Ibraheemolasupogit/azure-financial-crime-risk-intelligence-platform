@@ -203,6 +203,14 @@ Milestone 9 adds a safe investigation drafting workflow whose default `determini
 
 Grounding checks validate numeric claims, transaction and AML references, disclaimers, prohibited language, and word limits. Outputs require human review, use neutral language, and never constitute official submissions or proof of wrongdoing. Disabled Azure OpenAI prompt payloads demonstrate future Azure AI Foundry integration with `network_call_enabled: false`.
 
+## Monitoring and Drift Detection
+
+Milestone 10 monitors data quality, numeric PSI, categorical total-variation drift, fraud performance and score distributions, AML rule volumes and concentration, customer-risk distributions, explainability integrity, GenAI grounding and safety, and pipeline artifact health.
+
+Earlier transactions form the baseline and later transactions form the current period. Monitoring produces traceable control alerts and an overall `healthy`, `warning`, `critical`, or `unavailable` platform status. Run locally with `python3 scripts/run_platform_monitoring.py`.
+
+Monitoring recommends human review only. It never retrains models or changes fraud thresholds, AML scenarios, score weights, or risk bands automatically. Conceptually, the layer maps to Azure Monitor, Application Insights, Azure ML monitoring, ADLS, Synapse, Purview, AI Foundry observability, Log Analytics, and Power BI.
+
 Run locally with `python3 scripts/generate_investigation_reports.py`. Conceptually, the workflow maps to Azure AI Foundry, Azure OpenAI, AI Content Safety, Azure Functions, ADLS, Synapse, Key Vault, Purview, Azure Monitor, and Power BI, while remaining fully local in this milestone.
 
 ## Planned ML Use Cases
