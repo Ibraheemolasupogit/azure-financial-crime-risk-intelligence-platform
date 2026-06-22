@@ -149,6 +149,22 @@ The pipeline produces a persisted model, metadata, row-level test predictions, i
 
 Results must be interpreted as synthetic-data workflow evidence, not real detection performance or production readiness. Conceptually, the training and registry workflow maps to Azure Machine Learning, feature and prediction storage to Azure Data Lake Storage, analytical preparation to Synapse Analytics, telemetry to Azure Monitor and Application Insights, lineage to Microsoft Purview, and performance reporting to Power BI. No Azure credentials are required.
 
+## AML Transaction Monitoring
+
+Milestone 6 adds a deterministic and configurable AML rule engine that complements the fraud model with explainable transaction-monitoring controls. Ten scenarios cover high-value activity, structuring, rapid fund movement, synthetic geography conditions, unusual cross-border behaviour, dormant account reactivation, repeated failures, device/session risk, due-diligence exposure, and merchant/channel patterns.
+
+Each alert records the exact rule, configured severity and points, a human-readable reason, and machine-readable evidence containing observed values and thresholds. Alert IDs and timestamps are reproducible for identical data and configuration. Temporal rules use prior history only.
+
+Run the engine locally:
+
+```bash
+python3 scripts/run_aml_rules.py
+```
+
+Outputs include transaction-level alerts, a customer exposure summary, rule coverage, a machine-readable run summary, and a Markdown report. Customer review priority is an analytical triage aid, not an automated legal decision or composite customer risk score.
+
+Rule monitoring is vulnerable to false positives and requires contextual investigation and threshold tuning. The geography list is synthetic and illustrative and does not classify any country as inherently criminal. Conceptually, the engine maps transaction ingestion to Event Hubs, streaming evaluation to Stream Analytics or Functions, evidence to Data Lake Storage, historical analysis to Synapse, governance to Purview, telemetry to Azure Monitor, and dashboards to Power BI. No Azure services are connected.
+
 ## Planned ML Use Cases
 
 - Transaction fraud classification
@@ -229,6 +245,7 @@ python3 scripts/generate_synthetic_data.py
 python3 scripts/run_data_validation.py
 python3 scripts/build_features.py
 python3 scripts/train_fraud_baseline.py
+python3 scripts/run_aml_rules.py
 python3 -m pytest
 python3 -m ruff check .
 ./scripts/run_all_local.sh

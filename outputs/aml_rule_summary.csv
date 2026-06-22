@@ -1,0 +1,11 @@
+rule_id,rule_name,enabled,severity,risk_points,alert_count,affected_customer_count,percentage_of_transactions,configuration_summary
+AML001,High-value transaction,True,high,30,28,24,1.9074,"{""high_value_transaction_threshold"":500.0}"
+AML002,Structuring or smurfing,True,high,35,250,37,17.03,"{""structuring_aggregate_threshold"":300.0,""structuring_minimum_transaction_count"":3,""structuring_reporting_threshold"":1000.0,""structuring_window_hours"":720}"
+AML003,Rapid movement of funds,True,high,30,17,12,1.158,"{""rapid_movement_minimum_amount"":100.0,""rapid_movement_window_minutes"":1440}"
+AML004,High-risk geography,True,medium,18,474,49,32.2888,"{""high_risk_countries"":[""BR"",""TR"",""ZA""]}"
+AML005,Unusual cross-border activity,True,medium,20,773,48,52.6567,"{""cross_border_count_threshold"":5,""cross_border_ratio_threshold"":0.9,""cross_border_window_days"":30}"
+AML006,Dormant or low-activity account reactivation,True,high,28,8,8,0.545,"{""dormant_account_days"":60,""dormant_reactivation_amount"":200.0}"
+AML007,Repeated failed transactions,True,medium,16,12,10,0.8174,"{""failed_transaction_count_threshold"":2,""failed_transaction_window_hours"":720}"
+AML008,Device or session risk,True,medium,18,767,50,52.248,{}
+AML009,"KYC, PEP, sanctions, or watchlist exposure",True,high,32,286,11,19.4823,{}
+AML010,Unusual merchant or channel pattern,True,low,10,934,50,63.624,"{""high_risk_channels"":[""ATM"",""Online Banking""],""high_risk_merchant_categories"":[""Crypto Exchange"",""Money Transfer"",""Cash Services""]}"

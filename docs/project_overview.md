@@ -31,3 +31,9 @@ The feature dictionary and quality report make feature purpose, source, leakage 
 Milestone 5 adds a deterministic sklearn pipeline for synthetic transaction fraud classification. It uses a chronological train/test boundary, balanced Logistic Regression, configurable operating-threshold analysis, imbalance-aware metrics, persisted artifacts, and global coefficient inspection.
 
 The baseline explicitly excludes identifiers, raw timestamps, transaction outcomes, labels, and high-leakage feature-dictionary entries. Its synthetic performance is documented without claims of production readiness.
+
+## AML Transaction Monitoring
+
+Milestone 6 adds ten configurable transaction-monitoring controls with prior-only rolling logic, deterministic alert identifiers, traceable risk points, structured evidence, and customer-level exposure summaries. The engine complements supervised fraud prediction by identifying explainable scenarios that require contextual investigation.
+
+Alerts and customer priorities are triage artifacts only. They do not prove criminal activity, automate legal conclusions, create regulatory submissions, or implement the later composite customer risk-scoring milestone.

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 echo "Azure Financial Crime Risk Intelligence Platform"
-echo "Current status: Milestone 5 - Fraud detection baseline model"
+echo "Current status: Milestone 6 - AML rule engine"
 echo "Azure credentials required: no"
 echo "Synthetic data only: yes"
 echo
@@ -14,16 +14,19 @@ required_paths=(
   "configs/data_generation_config.yaml"
   "configs/feature_config.yaml"
   "configs/fraud_model_config.yaml"
+  "configs/aml_rules_config.yaml"
   "src"
   "src/data_generation/generate_banking_data.py"
   "src/ingestion/load_banking_data.py"
   "src/validation/validate_banking_data.py"
   "src/features/build_features.py"
   "src/models/train_fraud_baseline.py"
+  "src/aml_rules/aml_rule_engine.py"
   "scripts/generate_synthetic_data.py"
   "scripts/run_data_validation.py"
   "scripts/build_features.py"
   "scripts/train_fraud_baseline.py"
+  "scripts/run_aml_rules.py"
   "docs/project_overview.md"
   "tests/test_repo_structure.py"
   "tests/test_data_generation.py"
@@ -31,6 +34,7 @@ required_paths=(
   "tests/test_validation.py"
   "tests/test_feature_engineering.py"
   "tests/test_fraud_baseline.py"
+  "tests/test_aml_rule_engine.py"
 )
 
 for path in "${required_paths[@]}"; do
@@ -54,10 +58,13 @@ echo
 echo "Training fraud detection baseline..."
 "${PYTHON_BIN}" scripts/train_fraud_baseline.py
 echo
+echo "Running AML transaction-monitoring rules..."
+"${PYTHON_BIN}" scripts/run_aml_rules.py
+echo
 echo "Running tests..."
 "${PYTHON_BIN}" -m pytest
 echo
 echo "Running lint checks..."
 "${PYTHON_BIN}" -m ruff check .
 echo
-echo "Milestone 5 local checks passed."
+echo "Milestone 6 local checks passed."

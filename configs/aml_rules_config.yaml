@@ -1,0 +1,68 @@
+input_dir: data/raw
+transaction_features_path: data/processed/transaction_features.csv
+alerts_output_path: outputs/aml_transaction_alerts.csv
+customer_summary_output_path: outputs/aml_customer_summary.csv
+rule_summary_output_path: outputs/aml_rule_summary.csv
+run_summary_output_path: outputs/aml_run_summary.json
+report_output_path: reports/aml_rule_engine_report.md
+reference_timestamp: "2026-01-01T00:00:00"
+enabled_rules:
+  - AML001
+  - AML002
+  - AML003
+  - AML004
+  - AML005
+  - AML006
+  - AML007
+  - AML008
+  - AML009
+  - AML010
+rule_severity:
+  AML001: high
+  AML002: high
+  AML003: high
+  AML004: medium
+  AML005: medium
+  AML006: high
+  AML007: medium
+  AML008: medium
+  AML009: high
+  AML010: low
+rule_risk_points:
+  AML001: 30
+  AML002: 35
+  AML003: 30
+  AML004: 18
+  AML005: 20
+  AML006: 28
+  AML007: 16
+  AML008: 18
+  AML009: 32
+  AML010: 10
+high_value_transaction_threshold: 500.0
+structuring_reporting_threshold: 1000.0
+structuring_aggregate_threshold: 300.0
+structuring_window_hours: 720
+structuring_minimum_transaction_count: 3
+rapid_movement_window_minutes: 1440
+rapid_movement_minimum_amount: 100.0
+high_risk_countries:
+  - BR
+  - TR
+  - ZA
+high_risk_channels:
+  - ATM
+  - Online Banking
+high_risk_merchant_categories:
+  - Crypto Exchange
+  - Money Transfer
+  - Cash Services
+cross_border_window_days: 30
+cross_border_count_threshold: 5
+cross_border_ratio_threshold: 0.9
+dormant_account_days: 60
+dormant_reactivation_amount: 200.0
+failed_transaction_window_hours: 720
+failed_transaction_count_threshold: 2
+customer_alert_threshold: 800
+critical_alert_threshold: 1600

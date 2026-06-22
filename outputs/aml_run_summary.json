@@ -1,0 +1,72 @@
+{
+  "run_timestamp": "2026-06-22T19:59:02+00:00",
+  "input_row_counts": {
+    "transactions": 1468
+  },
+  "enabled_rules": [
+    "AML001",
+    "AML002",
+    "AML003",
+    "AML004",
+    "AML005",
+    "AML006",
+    "AML007",
+    "AML008",
+    "AML009",
+    "AML010"
+  ],
+  "total_alerts": 3549,
+  "alerted_transactions": 1405,
+  "affected_customers": 50,
+  "alerts_by_rule": {
+    "AML001": 28,
+    "AML002": 250,
+    "AML003": 17,
+    "AML004": 474,
+    "AML005": 773,
+    "AML006": 8,
+    "AML007": 12,
+    "AML008": 767,
+    "AML009": 286,
+    "AML010": 934
+  },
+  "alerts_by_severity": {
+    "high": 589,
+    "low": 934,
+    "medium": 2026
+  },
+  "highest_risk_customers": [
+    {
+      "customer_id": "CUST-000010",
+      "total_aml_alerts": 156,
+      "total_aml_risk_points": 3131,
+      "recommended_review_priority": "urgent"
+    },
+    {
+      "customer_id": "CUST-000018",
+      "total_aml_alerts": 148,
+      "total_aml_risk_points": 3097,
+      "recommended_review_priority": "urgent"
+    },
+    {
+      "customer_id": "CUST-000042",
+      "total_aml_alerts": 137,
+      "total_aml_risk_points": 2923,
+      "recommended_review_priority": "urgent"
+    },
+    {
+      "customer_id": "CUST-000034",
+      "total_aml_alerts": 144,
+      "total_aml_risk_points": 2799,
+      "recommended_review_priority": "urgent"
+    },
+    {
+      "customer_id": "CUST-000049",
+      "total_aml_alerts": 132,
+      "total_aml_risk_points": 2571,
+      "recommended_review_priority": "urgent"
+    }
+  ],
+  "overall_run_status": "passed",
+  "synthetic_data_statement": "All evaluated transactions, entities, indicators, and alerts are synthetic."
+}
