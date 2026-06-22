@@ -197,6 +197,14 @@ Outputs include global importance, source-level aggregation, local explanations,
 
 Explanations describe model behaviour and association, not causation, fraud, or criminal conduct. Human review remains mandatory, particularly for the baseline's substantial false-positive population. Conceptually, the layer maps to Azure Machine Learning responsible AI and registry capabilities, Data Lake Storage, Synapse, Azure Monitor, Purview, Power BI, and later Azure AI Foundry assistance.
 
+## GenAI-Assisted Investigations
+
+Milestone 9 adds a safe investigation drafting workflow whose default `deterministic_template` mode requires no LLM, API key, network request, or Azure credential. It assembles minimised structured evidence from customer scores, AML alerts, fraud predictions, and model explanations before generating case summaries, investigator notes, training-only SAR-style drafts, and an executive briefing.
+
+Grounding checks validate numeric claims, transaction and AML references, disclaimers, prohibited language, and word limits. Outputs require human review, use neutral language, and never constitute official submissions or proof of wrongdoing. Disabled Azure OpenAI prompt payloads demonstrate future Azure AI Foundry integration with `network_call_enabled: false`.
+
+Run locally with `python3 scripts/generate_investigation_reports.py`. Conceptually, the workflow maps to Azure AI Foundry, Azure OpenAI, AI Content Safety, Azure Functions, ADLS, Synapse, Key Vault, Purview, Azure Monitor, and Power BI, while remaining fully local in this milestone.
+
 ## Planned ML Use Cases
 
 - Transaction fraud classification
@@ -280,6 +288,7 @@ python3 scripts/train_fraud_baseline.py
 python3 scripts/run_aml_rules.py
 python3 scripts/score_customer_risk.py
 python3 scripts/explain_fraud_model.py
+python3 scripts/generate_investigation_reports.py
 python3 -m pytest
 python3 -m ruff check .
 ./scripts/run_all_local.sh

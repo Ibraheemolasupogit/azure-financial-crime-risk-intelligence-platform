@@ -1,5 +1,5 @@
 {
-  "run_timestamp": "2026-06-22T20:25:09+00:00",
+  "run_timestamp": "2026-06-22T21:57:09+00:00",
   "model_identifier": "1.0.0-baseline",
   "model_type": "LogisticRegression",
   "transactions_available": 367,
@@ -103,7 +103,7 @@
     "FRC_MERCHANT_CATEGORY_DOWN": 87
   },
   "explanation_quality_metrics": {
-    "run_timestamp": "2026-06-22T20:25:09+00:00",
+    "run_timestamp": "2026-06-22T21:57:09+00:00",
     "transactions_explained": 367,
     "explanations_passed": 367,
     "explanations_failed": 0,

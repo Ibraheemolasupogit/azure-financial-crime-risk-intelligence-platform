@@ -1,0 +1,18 @@
+{
+  "run_timestamp": "2026-06-22T21:57:10+00:00",
+  "generation_mode": "deterministic_template",
+  "cases_generated": 5,
+  "grounding_checks_passed": 5,
+  "grounding_checks_failed": 0,
+  "safety_checks_passed": 5,
+  "safety_checks_failed": 0,
+  "unsupported_numeric_claims": [],
+  "unsupported_transaction_references": [],
+  "unsupported_aml_rule_references": [],
+  "prohibited_claim_violations": [],
+  "disclaimer_violations": [],
+  "word_limit_violations": [],
+  "deterministic_output_status": "passed",
+  "overall_status": "passed",
+  "synthetic_data_statement": "All generated cases and evidence are synthetic."
+}

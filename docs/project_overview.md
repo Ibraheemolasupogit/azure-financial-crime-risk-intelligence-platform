@@ -49,3 +49,9 @@ Actual fraud labels are prohibited from scoring and used only in a separate retr
 Milestone 8 provides native global and transaction-level explanations for the persisted Logistic Regression fraud baseline. Transformed values multiplied by coefficients reconstruct each decision score and probability, while source-feature mappings and deterministic reason codes make model behaviour reviewable.
 
 Explanation quality controls prohibit identifiers and labels, validate numerical reconstruction, handle empty prediction-outcome groups, and retain detailed contribution lineage. Explanations remain non-causal synthetic model artifacts requiring human interpretation.
+
+## GenAI-Assisted Investigations
+
+Milestone 9 uses deterministic templates to turn selected structured evidence into grounded investigation drafts, review notes, training-only SAR-style narratives, disabled Azure OpenAI payloads, and an executive briefing. Conservative checks validate claims, references, disclaimers, and word limits before outputs pass.
+
+No external model is called. Generated text remains synthetic, non-accusatory, and dependent on human verification.

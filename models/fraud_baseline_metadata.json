@@ -1,7 +1,7 @@
 {
   "model_type": "LogisticRegression",
   "model_version": "1.0.0-baseline",
-  "training_timestamp": "2026-06-22T20:23:57+00:00",
+  "training_timestamp": "2026-06-22T21:57:07+00:00",
   "configuration": {
     "input_path": "data/processed/transaction_features.csv",
     "feature_dictionary_path": "data/processed/feature_dictionary.csv",

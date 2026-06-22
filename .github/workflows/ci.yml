@@ -43,6 +43,9 @@ jobs:
       - name: Generate fraud model explanations
         run: python scripts/explain_fraud_model.py
 
+      - name: Generate investigation reports
+        run: python scripts/generate_investigation_reports.py
+
       - name: Run ruff
         run: ruff check .
 

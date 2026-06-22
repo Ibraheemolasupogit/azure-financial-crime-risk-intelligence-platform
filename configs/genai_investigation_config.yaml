@@ -1,0 +1,46 @@
+generation_mode: deterministic_template
+customer_risk_scores_path: outputs/customer_risk_scores.csv
+customer_risk_components_path: outputs/customer_risk_components.csv
+aml_alerts_path: outputs/aml_transaction_alerts.csv
+aml_customer_summary_path: outputs/aml_customer_summary.csv
+fraud_predictions_path: outputs/fraud_test_predictions.csv
+local_explanations_path: outputs/fraud_local_explanations.csv
+reason_codes_path: outputs/fraud_prediction_reason_codes.csv
+explanation_quality_path: outputs/fraud_explanation_quality.json
+evidence_packets_path: outputs/investigation_evidence_packets.jsonl
+case_summaries_path: outputs/investigation_case_summaries.csv
+sar_drafts_path: outputs/sar_style_drafts.csv
+executive_brief_path: outputs/executive_risk_briefing.md
+prompt_payloads_path: outputs/genai_prompt_payloads.jsonl
+grounding_quality_path: outputs/genai_grounding_quality.json
+investigation_report_dir: reports/investigation_cases
+maximum_cases: 5
+included_risk_bands: [critical, high]
+included_review_priorities: [urgent, enhanced]
+minimum_total_risk_score: 55.0
+minimum_aml_alert_count: 20
+minimum_fraud_probability: 0.70
+top_aml_alert_count: 5
+top_fraud_transaction_count: 5
+top_model_reason_count: 5
+top_customer_reason_count: 3
+maximum_narrative_words: 250
+maximum_executive_brief_words: 450
+include_transaction_identifiers: true
+include_customer_identifiers: true
+include_personal_details: false
+require_human_review_statement: true
+require_synthetic_data_statement: true
+prohibited_claims:
+  - committed fraud
+  - committed money laundering
+  - is guilty
+  - confirmed criminal activity
+  - submit this report
+  - close the account
+required_disclaimers:
+  - Analytical draft requiring human review.
+  - All data and indicators are synthetic.
+grounding_check_enabled: true
+deterministic_timestamp: "2026-01-01T00:00:00"
+output_version: "1.0.0"
