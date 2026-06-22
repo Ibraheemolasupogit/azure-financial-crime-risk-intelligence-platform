@@ -31,6 +31,9 @@ jobs:
       - name: Build feature tables
         run: python scripts/build_features.py
 
+      - name: Train fraud baseline model
+        run: python scripts/train_fraud_baseline.py
+
       - name: Run ruff
         run: ruff check .
 

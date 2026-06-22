@@ -1,0 +1,30 @@
+input_path: data/processed/transaction_features.csv
+feature_dictionary_path: data/processed/feature_dictionary.csv
+model_output_dir: models
+report_output_dir: reports
+prediction_output_path: outputs/fraud_test_predictions.csv
+threshold_analysis_output_path: outputs/fraud_threshold_analysis.csv
+feature_list_output_path: outputs/fraud_feature_list.json
+metrics_output_path: outputs/fraud_model_metrics.json
+coefficients_output_path: outputs/fraud_model_coefficients.csv
+target_column: fraud_label
+timestamp_column: transaction_timestamp
+id_columns:
+  - transaction_id
+  - account_id
+  - customer_id
+  - device_id
+  - session_id
+excluded_feature_columns:
+  - fraud_typology
+  - label_confidence
+  - label_source
+  - transaction_status
+test_fraction: 0.25
+random_state: 42
+max_iterations: 1000
+class_weight: balanced
+default_threshold: 0.5
+threshold_selection_metric: f1
+minimum_precision: 0.10
+top_feature_count: 10

@@ -25,3 +25,9 @@ Validation outputs are written to `reports/data_validation_report.md` and `outpu
 Milestone 4 builds transaction, account, and customer feature tables from validated synthetic data. Transaction features use chronological prior-only windows for velocity, amount baselines, geographic behaviour, and device novelty. Account and customer tables provide deterministic descriptive aggregates, KYC and AML signals, and separately identified historical outcomes.
 
 The feature dictionary and quality report make feature purpose, source, leakage risk, missing values, duplicate keys, and label separation reviewable before any model training begins.
+
+## Fraud Detection Baseline
+
+Milestone 5 adds a deterministic sklearn pipeline for synthetic transaction fraud classification. It uses a chronological train/test boundary, balanced Logistic Regression, configurable operating-threshold analysis, imbalance-aware metrics, persisted artifacts, and global coefficient inspection.
+
+The baseline explicitly excludes identifiers, raw timestamps, transaction outcomes, labels, and high-leakage feature-dictionary entries. Its synthetic performance is documented without claims of production readiness.

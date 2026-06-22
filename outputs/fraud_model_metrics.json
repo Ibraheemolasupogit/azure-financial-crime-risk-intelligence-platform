@@ -1,0 +1,30 @@
+{
+  "training_row_count": 1101,
+  "test_row_count": 367,
+  "training_fraud_rate": 0.04178019981834696,
+  "test_fraud_rate": 0.027247956403269755,
+  "accuracy": 0.12806539509536785,
+  "precision": 0.030303030303030304,
+  "recall": 1.0,
+  "f1_score": 0.058823529411764705,
+  "roc_auc": 0.43221288515406164,
+  "average_precision": 0.024950569458029963,
+  "confusion_matrix": [
+    [
+      37,
+      320
+    ],
+    [
+      0,
+      10
+    ]
+  ],
+  "true_positives": 10,
+  "false_positives": 320,
+  "true_negatives": 37,
+  "false_negatives": 0,
+  "selected_threshold": 0.05,
+  "predicted_fraud_count": 330,
+  "false_positive_rate": 0.896358543417367,
+  "false_negative_rate": 0.0
+}

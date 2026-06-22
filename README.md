@@ -133,6 +133,22 @@ The CLI validates all six input datasets before processing and writes quality ev
 
 Leakage controls are deliberate: transaction windows and amount baselines use prior activity only, device novelty is calculated chronologically, and fraud labels are joined only after predictive features are complete. Label columns are excluded from the predictive feature list and classified separately in the feature dictionary. These outputs prepare later fraud modelling, AML monitoring, customer risk scoring, explainability, monitoring, and Power BI milestones without training a model in this milestone.
 
+## Fraud Detection Baseline
+
+Milestone 5 trains a balanced Logistic Regression baseline on the synthetic transaction feature table. Transactions are split chronologically so earlier events form the training set and later events form the test set, reflecting how a real fraud model encounters future activity more closely than a random split.
+
+The sklearn pipeline applies median imputation and scaling to numeric features, most-frequent imputation and one-hot encoding to categorical features, and balanced class weights for the imbalanced fraud target. Identifiers, raw timestamps, current transaction outcomes, label fields, and high-leakage feature-dictionary entries are excluded.
+
+Run the baseline locally:
+
+```bash
+python3 scripts/train_fraud_baseline.py
+```
+
+The pipeline produces a persisted model, metadata, row-level test predictions, imbalance-aware metrics, threshold analysis, a machine-readable feature list, and ranked Logistic Regression coefficients. The operating threshold is selected by configurable F1 or recall-at-minimum-precision logic; test-set threshold selection is used only for demonstration and would require a separate validation period in production.
+
+Results must be interpreted as synthetic-data workflow evidence, not real detection performance or production readiness. Conceptually, the training and registry workflow maps to Azure Machine Learning, feature and prediction storage to Azure Data Lake Storage, analytical preparation to Synapse Analytics, telemetry to Azure Monitor and Application Insights, lineage to Microsoft Purview, and performance reporting to Power BI. No Azure credentials are required.
+
 ## Planned ML Use Cases
 
 - Transaction fraud classification
@@ -212,6 +228,7 @@ pip install -r requirements.txt
 python3 scripts/generate_synthetic_data.py
 python3 scripts/run_data_validation.py
 python3 scripts/build_features.py
+python3 scripts/train_fraud_baseline.py
 python3 -m pytest
 python3 -m ruff check .
 ./scripts/run_all_local.sh
