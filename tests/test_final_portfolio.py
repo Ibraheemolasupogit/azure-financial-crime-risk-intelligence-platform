@@ -93,24 +93,40 @@ def test_readme_has_flagship_sections_and_honest_disclaimers() -> None:
     text = (ROOT / "README.md").read_text(encoding="utf-8")
     sections = [
         "Executive Summary",
-        "Business Problem",
-        "Platform Capabilities",
         "Architecture",
-        "End-to-End Workflow",
-        "Implemented Features",
+        "Platform Capabilities",
+        "End-to-End Lifecycle",
+        "Headline Results",
         "Azure Service Mapping",
+        "Power BI-Ready Analytics",
+        "Security, Governance and MLOps",
         "Quick Start",
-        "Sample Outputs",
-        "Security and Governance",
-        "MLOps",
-        "Testing",
+        "Repository Structure",
+        "Testing and Quality",
         "Known Limitations",
-        "Skills Demonstrated",
         "Target Roles",
+        "Portfolio Guides",
         "Synthetic Data Disclaimer",
     ]
     assert all(f"## {section}" in text for section in sections)
-    for statement in ["weak fraud", "false-positive", "no live Azure", "synthetic"]:
+    required_links = [
+        "diagrams/azure_reference_architecture.md",
+        "diagrams/azure_reference_architecture.mmd",
+        "docs/architecture_decisions/",
+        "docs/portfolio_evidence.md",
+        "docs/recruiter_summary.md",
+        "docs/interview_guide.md",
+        "docs/demo_guide.md",
+    ]
+    for path in required_links:
+        assert f"]({path})" in text
+        assert (ROOT / path).exists()
+    for statement in [
+        "Fraud performance is weak",
+        "false-positive",
+        "no live Azure",
+        "synthetic",
+    ]:
         assert statement.lower() in text.lower()
 
 
