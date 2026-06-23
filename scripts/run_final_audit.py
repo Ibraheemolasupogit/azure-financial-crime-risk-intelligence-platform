@@ -56,20 +56,19 @@ RUNBOOK_FILES = [
 ]
 README_SECTIONS = [
     "Executive Summary",
-    "Business Problem",
-    "Platform Capabilities",
     "Architecture",
-    "End-to-End Workflow",
-    "Implemented Features",
+    "Platform Capabilities",
+    "End-to-End Lifecycle",
+    "Headline Results",
     "Azure Service Mapping",
+    "Power BI-Ready Analytics",
+    "Security, Governance and MLOps",
     "Quick Start",
-    "Sample Outputs",
-    "Security and Governance",
-    "MLOps",
-    "Testing",
+    "Repository Structure",
+    "Testing and Quality",
     "Known Limitations",
-    "Skills Demonstrated",
     "Target Roles",
+    "Portfolio Guides",
     "Synthetic Data Disclaimer",
 ]
 PROHIBITED_REPORTING_COLUMNS = {
